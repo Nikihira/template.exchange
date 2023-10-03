@@ -12,7 +12,8 @@ h4,
 h5, 
 h6{color: #FFFFFF;}
 p{color:#5E6063;}
- 
+
+
 .page-header {
   margin: 0 0 1.5rem 0; }
   .page-header .breadcrumb {
@@ -27,20 +28,30 @@ p{color:#5E6063;}
 /* Navbar */
 @media(max-width: 440px){
    .wallets-menu{
-       margin-top: -60px;
-       padding-left: 1.4rem;
-       padding-right: 0.5rem;
-       
+       margin-top: -80px;
+       padding-left: 1.4rem;      
    }
-   .wallets-menu-items li{
-     margin: 0 4px 0 10px;
-     font-size: 13px;
-   }
-   
-   
+ 
+     
    .mobile-disable,
    .navbar{display: none !important;}
 }
+
+.search-form i{
+    font-size: 18px;
+}
+.search-box{
+    border: 1px solid #5E6063;
+    padding: 10px;
+    border-radius: 20px;
+}
+.search-navbar{
+    background: #000 !important;
+    border: none!important;
+    color: #5E6063;
+}
+
+
 .navbar {
   font-family: "Popins", sans-serif;
   background: #000;
@@ -110,55 +121,27 @@ p{color:#5E6063;}
           padding-left: 15px;
           padding-right: 11px;
           border-right: none; } }
-    .navbar .navbar-menu-wrapper .search-field .input-group input {
-      font-size: 0.875rem;
-      padding: .5rem; }
-      .navbar .navbar-menu-wrapper .search-field .input-group input:-ms-input-placeholder {
-        font-size: 0.875rem;
-        color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
-      .navbar .navbar-menu-wrapper .search-field .input-group input:-moz-placeholder {
-        font-size: 0.875rem;
-        color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
-      .navbar .navbar-menu-wrapper .search-field .input-group input::-moz-placeholder {
-        font-size: 0.875rem;
-        color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
-      .navbar .navbar-menu-wrapper .search-field .input-group input::-webkit-input-placeholder {
-        font-size: 0.875rem;
-        color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
-    .navbar .navbar-menu-wrapper .search-field .input-group i {
+          
+.navbar .navbar-menu-wrapper .search-field .input-group input {
+    border: 1px solid #121315;
+    font-size: 0.875rem;
+    padding: .5rem;
+    color: #fff;
+}
+
+
+.navbar .navbar-menu-wrapper .search-field .input-group i {
       font-size: 17px;
       margin-right: 0;
-      color: #9c9fa6; }
-    .navbar .navbar-menu-wrapper .search-field .input-group .input-group-text {
-      background: transparent; }
-    .navbar .navbar-menu-wrapper .count-indicator {
-      position: relative; }
-      .navbar .navbar-menu-wrapper .count-indicator .count-symbol,
-      .navbar .navbar-menu-wrapper .count-indicator .count-number {
-        position: absolute;
-        border-radius: 100%;
-        border: 2px solid #ffffff; }
-      .navbar .navbar-menu-wrapper .count-indicator .count-symbol {
-        top: 17px;
-        right: -3px;
-        width: 10px;
-        height: 10px; }
-      .navbar .navbar-menu-wrapper .count-indicator .count-number {
-        min-width: 14px;
-        height: 14px;
-        font-size: .5rem;
-        color: #ffffff;
-        bottom: 16px;
-        right: -5px;
-        line-height: 1;
-        text-align: center; }
-      .navbar .navbar-menu-wrapper .count-indicator:after {
-        display: none; }
-    .navbar .navbar-menu-wrapper .navbar-nav {
+      color:#121315;
+}
+
+.navbar .navbar-menu-wrapper .search-field .input-group .input-group-text {
+      background: transparent;
+      color: #121315;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -166,7 +149,7 @@ p{color:#5E6063;}
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
         color: inherit;
         font-size: 0.875rem;
         margin-left: 1.5rem;
@@ -180,7 +163,7 @@ p{color:#5E6063;}
         align-items: center; }
 
 @media (max-width: 767px) {
-          .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
             margin-left: .8rem;
             margin-right: .8rem; }
 }
@@ -288,7 +271,7 @@ p{color:#5E6063;}
 .sidebar {
   min-height: calc(100vh - 70px);
   background: #121315;
-  font-family: "ubuntu-regular", sans-serif;
+  font-family: "Popins", sans-serif;
   padding: 0;
   width: 260px;
   z-index: 11;
