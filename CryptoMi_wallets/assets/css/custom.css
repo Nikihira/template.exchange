@@ -1,0 +1,103 @@
+.crypto-icon{
+    height: 48px;
+    width: 48px;
+}
+.wallets-menu-items{padding-nottom: 50px;}
+.content-wrapper{background: #000 !important;}
+.list-group-item,
+.bg-darket{
+    background: #121315 !important;
+    background-color:#121315 ! important;
+}
+
+.wallets-menu{margin-bottom: 60px;}
+.wallets-menu-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wallets-menu-items ul{
+    margin-left: -46px;
+    margin-top: 20px;
+}
+.wallets-menu-items li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 4px 0 28px;
+}
+
+.wallets-menu-items a {
+  text-decoration: none;
+  color:#5E6063;
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 15px;
+  display: inline-block;
+  transition: color .2s;
+}
+.wallets-menu-items a:hover{
+    color: #5E6063;
+    border-bottom: 2px solid #fff;
+    z-index: 9000;
+}
+
+.menu-main {
+  list-style: none;
+  text-align: right;
+  padding-top: 25px;
+}
+.menu-main li {
+    display: inline-block;
+    vertical-align:top;
+    padding: 0 0 0 30px;
+}
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 15px;
+  display: inline-block;
+  transition: color .2s;
+  color: #FFFFFF !important;
+}
+
+.menu-main a, .menu-main a:visited {color: #5E6063;}
+.menu-main a.current, .menu-main a:hover{color: #4CE970 !important;}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;} 
+
+
+.wallet-convert{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.wallet-sum{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 19px;
+}
+
+/* Crypto currency style */
+.crypto-sum{font-size: 16px;color: #fff; text-align: right;}
+.crypto-cent{color: #5E6063;}
+.crypto-percent-min{color: red; font-size: 14px;}
+.crypto-percent-plus{color: #4CE97D;font-size: 14px;}
+.crypto-network{color: #5E6063;font-size: 14px;font-weight: 400;}
+.crypto-name{color: #fff; font-size:18px; font-weight: 500;}
+
+
+
+@media(max-width: 435px){
+    .balance-bg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #121315;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+}
