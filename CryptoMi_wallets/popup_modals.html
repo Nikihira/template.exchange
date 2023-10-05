@@ -5,19 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CryptoMi Wallets</title>
-    <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
-     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/favicon.ico" />
   </head>
   <body>
     <div class="container-scroller">
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="bg-darket text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="#0"><img src="../assets/images/logo-white.svg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo" href="#0"><img src="assets/images/logo-white.svg" alt="logo" /></a>
         </div>
         
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="navbar-menu-wrapper d-flex align-items-center">
 
 <div class="menu-left">
            <ul class="menu-main">
@@ -32,18 +32,17 @@
     <li class="nav-item nav-profile">
         <a class="nav-link">
             <div class="nav-profile-img">
-                <img src="../assets/images/ava.png" alt="image">
+                <img src="assets/images/ava.png" alt="image">
             </div>
         </a>
      </li>
 
 <div class="search-box">
-		
-		<form action="" class="search-form"><i class="mdi mdi-magnify"></i>
-				
-				<input class="search-navbar" type="text" placeholder="Search...." id="search" autocomplete="off">
-			</form>
-</div>
+		                    <form action="" class="search-form-top">
+		                        <i class="mdi mdi-magnify"></i>
+				                <input type="text" placeholder="Search...." id="search" autocomplete="off">
+			                </form>
+                        </div>
      
      
      <li class="nav-item">
@@ -169,59 +168,123 @@
 <div class="main-panel">
     <div class="content-wrapper">
               
+<div class="col-12">
                   
-<div class="row wallets-menu">
-    <div class="col-md-6 col-12">        
+<div class="row g-5">                  
+    <div class="col-md-6 col-lg-6 col-12">        
+
+
+<div class="wallets-menu col-md-6 col-12">        
           <div class="wallets-menu-items">
               
-              <h1 class="">USDT Wallet</h1>         
+              <h1 class="mobile-disable">Wallets</h1>
+                           
+              <nav class="slidemenu">
+                   
+<input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+<label for="slide-item-1"><a href="#popup"><span>Modal 1</span></a></label>
+   
+  <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+  <label for="slide-item-2">
+  <span>Modal 2</span></label>
+  
+  <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+  <label for="slide-item-3"><span>Modal 3</span></label>
+  
+  <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+  <label for="slide-item-4"><span>Modal 4</span></label>
+   
+  <div class="clear"></div>
+  
+  <div class="slider">
+    <div class="bar"></div>
+  </div>
+  
+</nav>              
+             
           </div>
     </div>
-</div>
-              
-<div class="row">
-    <div class="col-md-4">
-        <div class="total-balance balance-bg">
-            <div class="balance-body">
-                
-  <div class="">
-      <p class="mt-3">Balance<br><br>
-          <span class="wallet-sum">
-              $1.000<span class="crypto-cent">,00 USDT</span>                
- <br>
-      <span class="wallet-convert">≈ 0.0000080 BTC</span>
-      </p>    
-  </div>                                   
-              
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row pt-5">
-    <div class="col-lg-7">
-        
-          <div class="headers">
-              <h3 class="second-title">All transactions</h3>
-          </div>
         
           
-		
-		<div class="search">
-				<form class="search-form">
-					<input type="text" placeholder="Search for books, authors, categories and more..">
-					
-		
-				</form>
-			</div>
-
-
-  
-  
+<div class="total-balance balance-bg mt-4">
+<div class="balance-body">                 
+    <p class="mt-3">Balance<br><br>
+    <span class="wallet-sum">$1.000<span class="crypto-cent">,00 USDT</span><br>
+    <span class="wallet-convert">≈ 0.0000080 BTC</span>
+    </p>                                                   
+</div>
+</div>
+<!-- /total balance -->
+               
     
-<div class="transaction"> 
+</div> <!-- end row -->
+
+
+<!-- Right block with  -->
+<div class="col-md-6 col-lg-6 col-12 mobile-disable">
+    
+ <div class="row g-1">
+       
+        <div class="col-md-2 col-lg-2 col-4">                  
+          <div class="button-icon text-center"><a class="button-icon-a" href="#0">           
+   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+<div class="mt-2"></div>
+Buy
+</a>
+          </div> <!-- /headers -->
+    </div>
+    
+    <div class="col-md-2 col-lg-2 col-4">                  
+          <div class="button-icon text-center"> <a class="button-icon-a" href="#0">           
+   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 22.2832L21.1426 14.8586" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M15.9999 12.9628L21.6138 12.9627C22.0281 12.9628 22.3639 13.2986 22.3639 13.7128L22.3639 19.3268" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+<div class="mt-2"></div>
+Sell
+</a>
+          </div> <!-- /headers -->
+    </div>
+    
+           
+        <div class="col-md-2 col-lg-2 col-4">                  
+          <div class="button-icon text-center">
+              <a class="button-icon-a" href="#0">            
+   <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 24C32 28.1421 28.6421 31.5 24.5 31.5L12.5 31.5C8.3579 31.5 5 28.1421 5 24L5 12C5 7.8579 8.3579 4.5 12.5 4.5L24.5 4.5C28.6421 4.5 32 7.8579 32 12L32 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M16.2848 12.4107L16.3026 25.6203C16.3031 25.9331 15.932 26.1074 15.681 25.9124L11.5131 22.6728" stroke="#4CE97D" stroke-width="1.74194" stroke-linecap="round"/>
+<path d="M20.7148 23.5889L20.6972 10.3793C20.6968 10.0666 21.0679 9.89229 21.3187 10.0874L25.4867 13.3268" stroke="#4CE97D" stroke-width="1.74194" stroke-linecap="round"/>
+</svg>
+<div class="mt-2"></div>
+Swap
+</a>
+          </div> <!-- /headers -->
+    </div>             
+
+</div> <!-- end rows -->
+      
+<div class="recent-transaction mt-4">
+    
+    <li class="pt-3 d-flex justify-content-between align-items-start">
+    
+   <div class="ms-2 me-auto">
+     <p class="mt-2">
+      <span class="recent-transaction-title">Recent transactions<br>
+      </p>
+    </div>
+    <a href="#popup" class="recent-transaction-a px-2 mt-2">
+        View all</a>
+ 
+  </li>
+    
+    
     <ol class="list-group">
-         <li class="transaction-body d-flex justify-content-between align-items-start">
+         <li class="recent-transaction-body d-flex justify-content-between align-items-start">
       
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 10px" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
@@ -240,10 +303,8 @@
     <span class="trans-min">-1,255.85 USD</span></p>
     <p class="mt-2 fs-24"><i class="mdi mdi-chevron-right"></i>
     </p>
-  </li>
-  
-  
-  <li class="transaction-body d-flex justify-content-between align-items-start">
+  </li>        
+<li class="recent-transaction-body d-flex justify-content-between align-items-start">
       
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 10px" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
@@ -263,32 +324,75 @@
     <p class="mt-2 fs-24"><i class="mdi mdi-chevron-right"></i>
     </p>
   </li>
-  
- <li class="transaction-body d-flex justify-content-between align-items-start">
-      
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 10px" xmlns="http://www.w3.org/2000/svg">
-<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
-<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
-<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
-</svg> 
+</ol>
+</div>
 
-  <div class="ms-2 me-auto">
-     <p class="mt-2">
-      <span class="trans-name">Buy BTC <br>
-       <span class="trans-date">03.10.2023</span>
-      </p>
+</div> <!-- abaabab -->
+
+</div> <!-- end rows -->
+
+
+
+
+
+        
+
+
+<div class="row mobilept">
+    <div class="col-md-6">
+        
+          <div class="headers">
+              <h3>My assets</h3>
+          </div>
+                     
+<div class="balance-body"> 
+    <ol class="list-group">
+         <li class="list-group-item d-flex justify-content-between align-items-start">
+      
+      <img src="assets/images/cryptoicons/ethereum.svg" class="rounded-circle crypto-icon mt-3" alt="">
+      
+    <div class="ms-2 me-auto mt-3">
+      <h4 class="crypto-name">USDT <br>
+       <span class="crypto-network">Teather</span>
+      </h4>
     </div>
-    <p class="crypto-sum px-2 mt-2">
-        <span class="trans-sum">+0,05650</span> <br>
-    <span class="trans-min">-1,255.85 USD</span></p>
-    <p class="mt-2 fs-24"><i class="mdi mdi-chevron-right"></i>
+    <p class="crypto-sum mt-3 px-2">
+        $793,<span class="crypto-cent">08</span> <br>
+    <span class="crypto-percent-plus">+38%</span></p>
+    <p class="mt-4 fs-24"><i class="mdi mdi-chevron-right"></i>
+    </p>
+  </li>
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+      
+      <img src="assets/images/cryptoicons/bitcoin.svg" class="rounded-circle crypto-icon mt-3" alt="">
+      
+    <div class="ms-2 me-auto mt-3">
+      <h4 class="crypto-name">USDT<br>
+       <span class="crypto-network">Teather</span>
+      </h4>
+    </div>
+    <p class="crypto-sum mt-3 px-2">
+        $203,<span class="crypto-cent">29</span> <br>
+    <span class="crypto-percent-plus">+8%</span></p>
+    <p class="mt-4 fs-24"><i class="mdi mdi-chevron-right"></i>
     </p>
   </li>
   
-  
-  
-  
-  
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+      
+      <img src="assets/images/cryptoicons/ethereum.svg" class="rounded-circle crypto-icon mt-3" alt="">
+      
+    <div class="ms-2 me-auto mt-3">
+      <h4 class="crypto-name">USDT <br>
+       <span class="crypto-network">Teather</span>
+      </h4>
+    </div>
+   <p class="crypto-sum mt-3 px-2">
+        $703,<span class="crypto-cent">00</span> <br>
+    <span class="crypto-percent-min">+98%</span></p>
+    <p class="mt-4 fs-24"><i class="mdi mdi-chevron-right"></i>
+    </p>
+  </li> 
     </ol>
 </div>
        
@@ -296,10 +400,46 @@
     </div>
 </div>
 
+<!-- 
+#
+#
+# PopUP modals examples
+#
+# -->  
+
+<!-- modal one start -->
+<div id="popup" class="modal">
+        <div class="modal-content">
+            
+<div class="modal-box-header justify-content-between">
+<span class="modal-box-title">
+    Transfer Funds
+</span>
+
+<a href="#" class="close-modal-x">
+    X
+</a>
+
+
+</div>          
+            <svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37.5 64.75C52.8259 64.75 65.25 52.3259 65.25 37C65.25 21.6741 52.8259 9.25 37.5 9.25C22.1741 9.25 9.75 21.6741 9.75 37C9.75 52.3259 22.1741 64.75 37.5 64.75Z" stroke="#4CE97D" stroke-width="4.625"/>
+<path d="M30.5996 38.5417L35.0066 42.9487C35.1269 43.0689 35.3224 43.0689 35.4426 42.9487L47.5579 30.8333" stroke="#4CE97D" stroke-width="4.625" stroke-linecap="round"/>
+</svg>
+         
+       <span class="modal-box-txt">Transfer Successful</span>
+       <span class="modal-box-summ">10,55 USDT</span>  
+       
+<div class="buttons">
+    <a href="#" class="close-modal-button">
+       Nice! Close 
+    </a>
+</div>   
+<!-- modal one end  -->  
   
     </div> <!-- main-panel ends -->
 </div>
-</div>
+   
 
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
    

@@ -1,5 +1,14 @@
 .fs-24{font-size: 24px !important;}
+.page-header {margin: 0 0 1.5rem 0; }
+.page-header .breadcrumb {
+    border: 0;
+    margin-bottom: 0;
+}
 
+.list-group-item{
+    margin-top: 10px;
+    border-radius: 10px;
+}
 
 .crypto-icon{
     height: 48px;
@@ -48,7 +57,7 @@
 .wallet-sum{
     color: #fff;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 19px;
 }
 
@@ -63,21 +72,16 @@
 /* Transaction sections */
 
 .trans-search-form i{font-size: 18px;}
-.trans-search{
-    border: 0.8px solid #5E6063 !important;
+.search-form{
+    border: 1px solid #5E6063 !important;
     padding: 10px;
     border-radius: 50px;
 }
-.trans-search-input{
+.search-form input{
     background: #000 !important;
     border: none !important;
     color: #5E6063;
 }
-
-@media(max-width: 440px){
-    
-}
-
 
 .second-title{
     font-family: "Popins", sans-serif;
@@ -105,19 +109,6 @@
    margin-bottom: 10px;
 }
 
-@media(max-width: 435px){
-    .balance-bg{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #121315;
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
-} /* max width 435 */
 
 .clear{clear: both;}
 .slide-toggle{display: none;}
@@ -180,37 +171,6 @@
 .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
 .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
 .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
-
-
-@media(max-width: 440px){
-
- .slidemenu label{
-    margin: 0px;    
-    width: 25%;
-}
-
-.slidemenu{
-    justify-content: center !important;
-    align-items: center !important;
-    margin-left: -20px;
-    width: 100%;
-}
-.funding{padding-left: 15px;}
-
-.slidemenu label span{
-    padding: 1px;
-    text-align: center;       
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-.slider .bar{
-  width: 25%;}
-
-
-  
-}
-
-
 
 button.show-modal,
 .modal-box {
@@ -294,3 +254,60 @@ section.active .modal-box {
 }
 
   
+@media(max-width: 440px){
+.search-form{
+    border: 1px solid #5E6063 !important;  
+    max-width: 340px;
+    border-radius: 50px;
+}
+.search-form input{
+    background: none !important;
+    border: none !important;
+    color: #5E6063 !important;
+    margin-left: 25px;
+    width: 280px;
+}
+.search-form input:focus{color: #bdbdbd !important; }
+.search-form i{
+    position: absolute;
+    color: #5E6063;
+}
+
+.balance-bg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #121315;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slidemenu label{
+    margin: 0px;    
+    width: 25%;
+}
+.slidemenu{
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: -20px;
+    width: 100%;
+}
+.funding{padding-left: 15px;}
+.slidemenu label span{
+    padding: 1px;
+    text-align: center;       
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.slider .bar{width: 25%;}
+
+.main-title{
+    padding-top: 40px;
+    margin-left: -20px;
+}
+
+
+
+
+}

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url("custom.css");
 @import url("anim.css");
 @import url("boostrap.css");
 @import url('other.css');
@@ -12,46 +11,14 @@ h4,
 h5, 
 h6{color: #FFFFFF;}
 p{color:#5E6063;}
-
-
-.page-header {
-  margin: 0 0 1.5rem 0; }
-  .page-header .breadcrumb {
-    border: 0;
-    margin-bottom: 0; }
-
-.list-group-item{
-    margin-top: 10px;
-    border-radius: 10px;
+.icon-24{
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    margin-top: -5px;
 }
 
 /* Navbar */
-@media(max-width: 440px){
-   .wallets-menu{
-       margin-top: -80px;
-       padding-left: 1.4rem;      
-   }
- 
-     
-   .mobile-disable,
-   .navbar{display: none !important;}
-}
-
-.search-form i{
-    font-size: 18px;
-}
-.search-box{
-    border: 1px solid #5E6063;
-    padding: 10px;
-    border-radius: 20px;
-}
-.search-navbar{
-    background: #000 !important;
-    border: none!important;
-    color: #5E6063;
-}
-
-
 .navbar {
   font-family: "Popins", sans-serif;
   background: #000;
@@ -567,4 +534,508 @@ p{color:#5E6063;}
 @media (max-width: 991px) {
     .content-wrapper{padding: 0.4rem 1rem;}
 }
+
+.fs-24{font-size: 24px !important;}
+.page-header {margin: 0 0 1.5rem 0; }
+.page-header .breadcrumb {
+    border: 0;
+    margin-bottom: 0;
+}
+
+.list-group-item{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.crypto-icon{
+    height: 48px;
+    width: 48px;
+}
+
+.content-wrapper{background: #000 !important;}
+.list-group-item,
+.bg-darket{
+    background: #121315 !important;
+    background-color:#121315 ! important;
+}
+
+.menu-main {
+  list-style: none;
+  text-align: right;
+  padding-top: 25px;
+}
+.menu-main li {
+    display: inline-block;
+    vertical-align:top;
+    padding: 0 0 0 30px;
+}
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 15px;
+  display: inline-block;
+  transition: color .2s;
+  color: #FFFFFF !important;
+}
+
+.menu-main a, .menu-main a:visited {color: #5E6063;}
+.menu-main a.current, .menu-main a:hover{color: #4CE970 !important;}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+
+/* search box on the top */
+.search-form-top input:focus{color: #bdbdbd !important;}
+.search-form-top i{
+    position: absolute;
+    color: #5E6063;
+    font-size: 18px;
+}
+.search-form-top{
+    border: 1px solid #5E6063 !important;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+.search-form-top input{
+    background: #000 !important;
+    border: none !important;
+    color: #5E6063;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.wallet-convert{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.wallet-sum{
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 19px;
+}
+
+/*
+#
+# Crypto currency style 
+#
+*/
+.crypto-sum{font-size: 16px;color: #fff; text-align: right;}
+.crypto-cent{color: #5E6063;}
+.crypto-percent-min{color: red; font-size: 14px;}
+.crypto-percent-plus{color: #4CE97D;font-size: 14px;}
+.crypto-network{color: #5E6063;font-size: 14px;font-weight: 400;}
+.crypto-name{color: #fff; font-size:18px; font-weight: 500;}
+
+
+/*
+#
+# Style for Transaction s history left bottom block 
+#
+*/
+
+.search-form-transactions input:focus{color: #bdbdbd !important;}
+.search-form-transactions i{
+    position: absolute;
+    color: #5E6063;
+    font-size: 18px;
+}
+.search-form-transactions{
+    border: 1px solid #5E6063 !important;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+.search-form-transactions input{
+    background: #000 !important;
+    border: none !important;
+    color: #5E6063;
+    width: 100%;
+    margin-left: 25px;
+}
+
+.second-title{
+    font-family: "Popins", sans-serif;
+    font-size: 16px;
+    color: #5E6063;
+    padding-bottom: 15px;
+}   
+.trans-name{
+    color: #fff;
+    font-size:16px;
+    font-weight: 400;}
+.trans-sum{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+}
+.trans-min{
+    font-size: 14px;
+    color: #5E6063;
+}
+.trans-date{color: #5E6063;font-size: 14px;}
+
+.transaction-body{
+   border-bottom: 2px solid #121315;
+   padding: 12px 4px 0px 4px;   
+}
+.transaction-body:hover{background: rgba(255,255,255,0.08);}
+
+
+
+/*
+#
+# Second menu setting 
+#
+*/
+.wallets-menu{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.clear{clear: both;}
+.slide-toggle{display: none;}
+.slidemenu{
+  font-family: "Popins", sans-serif;
+  letter-spacing: 1.3px;
+  width: 100%;
+  margin: 35px auto;
+  overflow: auto;
+}
+
+.slidemenu label{
+  width: 25%;
+  display: block;
+  float: left;
+  color: #5E6063;
+
+}
+.slidemenu label:hover{
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.slidemenu label span{
+  display: block;
+  padding: 10px;
+  text-align: center;   
+}
+
+/*Bar Style*/
+
+.slider{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #5E6063;
+  margin-top: 7px;
+}
+.slider .bar{
+  width: 24%;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+/*Animations*/
+.slidemenu label, .slider .bar {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+}
+
+/*Toggle*/
+
+.slidemenu .slide-toggle:checked + label{color: #FFFFFF;}
+
+
+
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+
+
+
+
+
+/*
+#
+# Style for last transaction block 
+#
+*/
+.recent-transaction-body{
+   border-bottom: 2px solid rgba(255,255,255,0.05);
+   padding: 12px 4px 0px 4px;   
+}
+.recent-transaction-body:hover{
+    background: rgba(255,255,255,0.05); 
+    border-bottom: none;
+}
+
+.recent-transaction{
+    background: #121315;
+    border-radius: 20px;
+    padding: 0 20px 0 20px;
+}
+.recent-transaction-a{
+    font-size: 15;
+    color: #4CE97D;
+    text-decoration:none;
+}
+.recent-transaction-a:hover{color: #18873A;}
+.recent-transaction-title{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.button-icon span{
+    color: #FFFFFF;
+    margin-top: 7px;    
+}
+.button-icon-a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.button-icon-a:hover{color: #4CE97D;}
+
+
+
+/*
+#
+# Wallets cards design
+#
+*/
+.wallet-card{
+    /* top | right | bottom | left */
+    padding: 15px 15px 5px 15px;
+    margin-right: 5px;
+    background: #121315;
+    min-width: 10px;    
+    border-radius: 15px;
+}  
+.wallet-card-name{
+    color: #fff;
+    font-size:16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.wallet-card-amout{
+    color: #5E6063;
+    font-size:15px;
+    font-weight: 400;    
+}
+
+/* ------------- Pop UP windows box START ----------- */
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(black, .4);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-content{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: #121315;
+    border: none;
+} 
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-box-title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.modal-box-summ {
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+} 
+.modal-box-txt{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #5E6063;
+}
+.buttons {margin-top: 30px;}
+.close-modal-x {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.close-modal-button {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 16px 92px;
+  margin: 0 10px;
+  color: #FFFFFF;
+  background: #4CE97D;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  
+  width: 100%;
+  
+}
+.close-modal-button:hover{
+    color: #FFFFFF;
+    background: #18873A;
+    text-decoration: none;
+}
+/* ------------- Pop UP windows box END ----------- */
+
+
+/*
+#
+# media request for responsibility 
+#
+*/
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.navbar-brand-wrapper,
+.sidebar {width: 200px !important;}
+ 
+ /* menu on the top START */
+.menu-main{text-align: left;}
+.menu-left ul{
+    padding: 0px;
+    margin: 0px;   
+}
+.menu-left ul li{padding: 0 0 0 10px;}
+.navbar-menu-wrapper{padding: 0px !important;}
+/* menu pn the top END */  
+
+.wallet-sum{font-size: 26px;}
+
+.search-form-transactions{width: 99%;}
+.search-form-transactions input{width: 300px;}
+.search-form-transactions i{position: absolute;}
+
+
+
+
+} /* min width 992 max 1199.98 END*/
+
+
+/*
+#
+# max-width 440px START
+#
+*/
+@media(max-width: 440px){
+.wallets-menu{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.wallets-title{
+    margin-top: -90px;
+    padding-left: 1.4rem;
+    padding-bottom: 10px;      
+}
+      
+.mobile-disable,
+.navbar{display: none !important;}
+
+.search-form-transactions input{
+    margin-left: 25px;
+    width: 280px;
+}
+.mobilept{padding-top: 80px;}
+.balance-bg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #121315;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slidemenu label{
+    margin: 0px;    
+    width: 25%;
+}
+.slidemenu{
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: -20px;
+    width: 100%;
+    margin-top: -50px;
+}
+.funding{padding-left: 15px;}
+.slidemenu label span{
+    padding: 1px;
+    text-align: center;       
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.slider .bar{width: 25%;}
+
+.main-title{
+    padding-top: 40px;
+    margin-left: -20px;
+}
+
+
+
+/* ------------- Pop UP windows box START ----------- */
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 0px;    
+    background-color: rgba(black, .4);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-content{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 350px;
+    width: 100%;    
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: #121315;
+    border: none;
+} 
+
+.close-modal-x{display: none;}
+
+
+
+
+}
+
+
 /*# sourceMappingURL=style.css.map */
