@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url("anim.css");
 @import url("boostrap.css");
-@import url('other.css');
+@import url("other.css");
+@import url("custom.css");
 
 body, p, a{font-family: 'Poppins', sans-serif !important;}
 h1, 
@@ -526,14 +527,14 @@ p{color:#5E6063;}
 
 .content-wrapper {
   background: #000;
-  padding: 3rem 4.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3rem;
+  padding-top: 4.5rem;  
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
-@media (max-width: 991px) {
-    .content-wrapper{padding: 0.4rem 1rem;}
-}
+
 
 .fs-24{font-size: 24px !important;}
 .page-header {margin: 0 0 1.5rem 0; }
@@ -544,16 +545,16 @@ p{color:#5E6063;}
 
 .list-group-item{
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid #1C1E26;
+    background: #121315;
 }
 
 .crypto-icon{
-    height: 48px;
-    width: 48px;
+    height: 38px;
+    width: 38px;
 }
 
-.content-wrapper{background: #000 !important;}
-.list-group-item,
 .bg-darket{
     background: #121315 !important;
     background-color:#121315 ! important;
@@ -623,12 +624,23 @@ p{color:#5E6063;}
 # Crypto currency style 
 #
 */
-.crypto-sum{font-size: 16px;color: #fff; text-align: right;}
+.crypto-sum,
+.crypto-name{
+    color: #fff;
+    font-size:17px;
+    font-weight: 400;
+}
+.crypto-sum{text-align: right;}
 .crypto-cent{color: #5E6063;}
-.crypto-percent-min{color: red; font-size: 14px;}
-.crypto-percent-plus{color: #4CE97D;font-size: 14px;}
-.crypto-network{color: #5E6063;font-size: 14px;font-weight: 400;}
-.crypto-name{color: #fff; font-size:18px; font-weight: 500;}
+
+.crypto-percent-min{color: red; font-size: 13px;}
+.crypto-percent-plus{color: #4CE97D; font-size: 13px;}
+
+.crypto-network{
+    color: #5E6063;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 /*
@@ -714,6 +726,7 @@ p{color:#5E6063;}
   color: #5E6063;
 
 }
+
 .slidemenu label:hover{
   cursor: pointer;
   color: #FFFFFF;
@@ -724,8 +737,6 @@ p{color:#5E6063;}
   padding: 10px;
   text-align: center;   
 }
-
-/*Bar Style*/
 
 .slider{
   width: 100%;
@@ -740,29 +751,19 @@ p{color:#5E6063;}
   background: #FFFFFF;
 }
 
-/*Animations*/
 .slidemenu label, .slider .bar {
   transition: all 500ms ease-in-out;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
 }
 
-/*Toggle*/
-
 .slidemenu .slide-toggle:checked + label{color: #FFFFFF;}
-
-
-
 .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
 .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
 .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
 .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
 
-
-
-
-
-
+.underline-grey{border-bottom: 1px solid rgba(255,255,255,0.05);}
 /*
 #
 # Style for last transaction block 
@@ -828,6 +829,11 @@ p{color:#5E6063;}
     font-size:15px;
     font-weight: 400;    
 }
+
+
+.wallets-title{padding-bottom: 20px;}
+
+
 
 /* ------------- Pop UP windows box START ----------- */
 
@@ -908,12 +914,22 @@ p{color:#5E6063;}
 /* ------------- Pop UP windows box END ----------- */
 
 
+.filter-button{
+    color:#c2c2c2;
+    font-size: 22px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
 /*
 #
 # media request for responsibility 
 #
 */
-
+@media(min-width: 992px){
+    .top-bar-mobile,
+    .desktop-disable{display: none!important;}
+}
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 .navbar-brand-wrapper,
@@ -947,18 +963,49 @@ p{color:#5E6063;}
 #
 */
 @media(max-width: 440px){
+.content-wrapper{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+.mobile-top-header{
+    margin-top: -2.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.8rem;
+}
+
+.wallet-sum{font-size: 26px;}
 .wallets-menu{
     margin-bottom: 30px;
     margin-left: 20px;
     margin-top: 0px;
     padding-top: 0px;
 }
-.wallets-title{
-    margin-top: -90px;
-    padding-left: 1.4rem;
-    padding-bottom: 10px;      
+
+.second-title{
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
 }
-      
+
+.crypto-icon{
+    width: 38px;
+    height: 38px;
+}  
+
+.crypto-sum,
+.crypto-name{
+    font-size: 16px;
+    font-weight: 400;
+}
+.crypto-percent-min,
+.crypto-percent-plus, 
+.crypto-network{font-size: 14px;}
+
 .mobile-disable,
 .navbar{display: none !important;}
 
@@ -967,9 +1014,10 @@ p{color:#5E6063;}
     width: 280px;
 }
 .mobilept{padding-top: 80px;}
+
+
 .balance-bg{
     padding-top: 10px;
-    padding-bottom: 10px;
     background: #121315;
     border-radius: 15px;
     text-align: center;
@@ -977,6 +1025,11 @@ p{color:#5E6063;}
     justify-content: center;
 }
 
+.balance-bg-01{    
+    background: #121315;
+    border-radius: 15px;
+}
+.total-balance-2{padding: 0.2rem;}
 .slidemenu label{
     margin: 0px;    
     width: 25%;
@@ -992,7 +1045,7 @@ p{color:#5E6063;}
 .slidemenu label span{
     padding: 1px;
     text-align: center;       
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 .slider .bar{width: 25%;}
@@ -1002,7 +1055,21 @@ p{color:#5E6063;}
     margin-left: -20px;
 }
 
+.button-icon-a{font-size: 14px;}
+.border-01{
+    border-left: 1px solid rgba(255,255,255, 0.05);
+    border-right: 1px solid rgba(255,255,255, 0.05);
+}
+.button-icon{padding-top: 15px; padding-bottom: 10px;}
 
+.mobile-title{
+    font-family: "Popins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.filter-button{color: #FFFFFF;}
 
 /* ------------- Pop UP windows box START ----------- */
 
