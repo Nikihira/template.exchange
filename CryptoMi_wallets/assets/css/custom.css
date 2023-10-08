@@ -5,7 +5,7 @@
 
 .topbar-mobile{
     margin-top: -50px;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
     padding-right: 0.5rem;
 }
 
@@ -45,6 +45,28 @@
   transition-duration: .3s;
 }
 
+
+.filter-menu,
+.custom-select{
+    background: none !important;
+    border: none;
+    color: #F0F0F0;
+}
+
+.btn-swap{
+    background: none !important;
+    border: none;
+    color: #F0F0F0;
+    border: 1px solid #1e1e21;
+    border-radius: 25px;
+    font-size: 12px;
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+
 .btn-container {
   display: table-cell;
   vertical-align: middle;
@@ -73,8 +95,8 @@
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
   content: attr(data-on);
   position: absolute;
-  font-size: 10px;
-  top: 9px;
+  font-size: 12px;
+  top: 8px;
   right: 20px;
   color: #f0f0f0;
   font-weight: 500;
@@ -87,7 +109,7 @@
   background: #1C1E26;
   border-radius: 15px;
   position: absolute;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   left: 3px;
@@ -139,4 +161,464 @@
   position: relative;
   transition: all 0.3s ease;
   display: block;
+}
+
+
+/* 
+#
+# TOPBAR SELECT CURRENCY 
+#
+*/
+
+.topbar-select{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #1e1e21;
+}
+
+.filter-menu{
+    font-size: 12px;
+    color: #AEAEAE;
+}
+.btn-filters{
+    background: none !important;
+    border: none;
+    color: #AEAEAE;   
+    font-size: 12px;
+    width:60px;
+    text-align: left;
+}
+.topbar-filter-menu{padding-top: 15px;}
+.topbar-filter-menu-content{margin-left: 12px;}
+
+
+/*
+#
+# P2P Card style 
+#
+*/
+.p2p-card{
+    background: #121315;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.p2p-alert{    background: #121315;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 15px;}
+.p2p-card-top{border-bottom: 1px solid #1C1E26;}
+
+.seller-name{
+    color: #fff;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.seller-status{
+    font-size:13px;
+    color: #5E6063;
+    padding-top: 10px;  
+}
+
+.p2p-info-block{padding-top: 3px;}
+
+.seller-stats{
+    font-size:14px;
+    color:#5E6063;
+    right: 0px;
+}
+
+.seller-time{
+    font-size: 12px;
+    color: #4CE97D;
+}
+
+.seller-rating{
+    font-size: 12px;
+    color: #AEAEAE;
+}
+
+.p2p-ava{
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.seller-price{
+    color: #5E6063;
+    font-size: 14px;
+}
+.seller-limit{
+    font-size: 13px;
+    color: #5E6063;
+    line-height: 24px;
+}
+
+.seller-limit-count{
+    font-size: 13px;
+    color: #F0F0F0;
+    line-height: 24px;
+}
+
+.mrm{padding-right: 35px;}
+
+.seller-summ{
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.seller-bank{color: #F0F0F0; font-size: 14px;}
+.seller-bank-logo{margin-top: -5px;}
+
+
+.btn-sell {
+  display: flex;
+  align-items: center;
+  left: 10px;
+  width: 85px;
+  height: 40px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background-color: #F23637;
+}
+
+.btn-sell:hover{background-color: #ef4444;}
+.btn-sell:active{transform: scale(0.96);}
+
+.btntxt {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0F0F0;
+}
+
+
+.p2p-text-block p{
+    font-size: 14px;
+    color: #AEAEAE;
+    line-height: 10px;
+}
+
+.p2p-text-block p span{
+    font-size: 14px;
+    color: #5E6063;
+    letter-spacing: 0.06rem;
+}
+
+
+.seller-info p{padding: 0 15px 0 0; color: #AEAEAE; font-size: 13px}
+.seller-verified{
+    color: #F0F0F0;
+    font-size: 15px;
+}
+.view-p{color: #4CE97D;}
+.p2p-alert-card{
+    background: #121315;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.p2p-profile-card{
+    background: #121315;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.p2p-base-card{padding-left: 5px;}
+.p2p-info-card-content {display: flex;}
+.p2p-info-card-content p{
+    font-size: 14px;
+    color: #F0F0F0;
+    line-height: 10px;
+}
+.p2p-info-card-content p.c-gray{color: #5E6063;}
+
+/* 
+#
+# FEEDBACK SECTIONS SYYLE
+#
+*/
+.p2p-main-title{
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.p2p-title-amout{
+    color: #F0F0F0;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.p2p-remark-block,
+.p2p-text-block{padding-left: 5px;}
+.p2p-feedback-header{padding-left: 10px;}
+.p2p-feedback{
+    padding-left: 10px;
+    border-bottom: 2px solid #1C1E26;
+}
+
+.p2p-feedback-user{
+    font-size: 16px;
+    color: #F0F0F0;
+}
+.p2p-feedback-info{
+    font-size: 13px;
+    color: #5E6063;
+}
+.p2p-feedback-txt{
+    font-size: 14px;
+    color: #AEAEAE;
+}
+
+.p2p-payments-tab{
+    padding-right: 55px;
+    padding-left: 55px;
+    border-bottom: 2px solid #1C1E26;
+}
+
+.p2p-payments-tab a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #F0F0F0;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.p2p-payments-tab.active{border-bottom: 2px solid #4CE970;}
+
+.p2p-payments-card{
+    background: #121315;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.p2p-input-group-amount input:focus{color: #bdbdbd !important;}
+.p2p-input-group-amount i{
+    position: absolute;
+    color: #5E6063;
+    font-size: 18px;
+}
+.p2p-input-group-amount span{
+ color: #AEAEAE;
+}
+.p2p-input-group-amount{
+    border: 1px solid #1C1E26;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+.p2p-input-group-amount input{
+    background: none;
+    border: none !important;
+    color: #5E6063;
+    width: 75%;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.p2p-input-group-payments{
+    border: 1px solid #1C1E26;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.p2p-payments-select{
+    color: #AEAEAE;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.p2p-payments-info{
+   color: #5E6063;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+.p2p-payments-info p{
+    line-height: 6px;
+}
+
+.p2p-btn-payments {
+  display: flex;
+  align-items: center;
+  left: 10px;
+  width: 95%;
+  height: 45px;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background-color: #F23637;
+}
+
+.p2p-btn-payments:hover{background-color: #ef4444;}
+.p2p-btn-payments:active{transform: scale(0.96);}
+
+.p2p-btn-payments-txt {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0F0F0;
+}
+
+.remark-a,
+.remark-a:hover{
+    color: #5E6063;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.p2p-amount-title{
+    font-size: 22px;
+    color: #F0F0F0;
+    width:80%;
+    line-height: 28px;
+}
+
+.p2p-btn-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size:13px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background-color: #4CE970;
+}
+
+.p2p-amount-a{
+    text-decoration: none;
+    color: #F0F0F0;
+}
+.p2p-amount-a:hover{color: #4CE97D;}
+.p2p-amount-a:hover svg path {stroke: #4CE970;}
+
+a{
+    text-decoration: none;
+    color: ingerit;
+}
+a:hover{color: #4CE97D;}
+
+
+.p2p-amount-btn,
+.p2p-amount-btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  border: 1px solid #4CE970;
+  border-radius: 35px;
+  color: #4CE97D;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background: none;
+}
+.p2p-amount-btn-1:hover{
+    background: #4CE97D;
+    color: #1C1E26;
+}
+.p2p-amount-btn{
+    border: 1px solid #AEAEAE;
+    color: #AEAEAE;
+}
+.p2p-amount-btn:hover {
+    background: #F0F0F0;
+    color: #1C1E26;
+}
+
+
+.p2p-amount-sub-t{
+    font-size: 14px;
+    color: #5E6063;
+}
+.p2p-amount-sub{
+    font-size: 14px;
+    color: #F0F0F0;
+}
+.p2p-amount-chat-title{
+    font-size: 24px;
+    color: #F0F0F0;
+    width:70%;
+    line-height: 32px;
+}
+
+.p2p-btn-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #1C1E26;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background: #FAE31B;
+}
+
+.btn-close{
+    color: #F0F0F0 !important;
+}
+
+*alert styling*/
+  .alert .icon {
+    text-align: center;
+    width: 58px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 15px;
+    border-radius: 6px 0 0 6px;
+  }
+.alert .icon svg {
+    font-size: 20px;
+    color: #fff;
+    left: 11px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+  }
+  
+.alert .ttt{
+    margin-left: 35px;
+}
+
+.btnclose{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    color: #F0F0F0;   
 }
