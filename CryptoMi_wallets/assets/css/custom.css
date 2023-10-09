@@ -1,3 +1,14 @@
+@media (min-width: 992px) {
+
+.profile-card-pt{margin-top:-20px !important;}
+
+} /* media */
+
+.profile-card-pt{
+    margin-top:50px;
+}
+
+
 .top-bar-title{
     font-size: 15px;
     color: #F0F0F0;
@@ -204,11 +215,12 @@
     padding-top: 20px;
     padding-left: 15px;
 }
-.p2p-alert{    background: #121315;
+.p2p-base-card-bg{
+    background: #121315;
     border-radius: 15px;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 15px;}
+    padding-top: 15px;
+    padding-left: 15px;
+}
 .p2p-card-top{border-bottom: 1px solid #1C1E26;}
 
 .seller-name{
@@ -488,13 +500,14 @@
     font-size: 14px;
     text-decoration: none;
 }
-
+.p2p-amount-title-f,
 .p2p-amount-title{
     font-size: 22px;
     color: #F0F0F0;
     width:80%;
     line-height: 28px;
 }
+.p2p-amount-title-f{width: 100%;}
 
 .p2p-btn-3 {
   display: flex;
@@ -543,6 +556,7 @@ a:hover{color: #4CE97D;}
   transition-duration: .3s;
   background: none;
 }
+.active-1,
 .p2p-amount-btn-1:hover{
     background: #4CE97D;
     color: #1C1E26;
@@ -564,12 +578,13 @@ a:hover{color: #4CE97D;}
 .p2p-amount-sub{
     font-size: 14px;
     color: #F0F0F0;
+    line-height: 10px;
 }
 .p2p-amount-chat-title{
-    font-size: 24px;
+    font-size: 20px;
     color: #F0F0F0;
     width:70%;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .p2p-btn-4 {
@@ -591,6 +606,10 @@ a:hover{color: #4CE97D;}
 .btn-close{
     color: #F0F0F0 !important;
 }
+.text-in-card{
+    font-size: 13px;
+    color: #5E6063;
+}
 
 *alert styling*/
   .alert .icon {
@@ -600,25 +619,126 @@ a:hover{color: #4CE97D;}
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 15px;
-    border-radius: 6px 0 0 6px;
   }
 .alert .icon svg {
     font-size: 20px;
     color: #fff;
     left: 11px;
-    margin-top: -10px;
+    margin-top: -15px;
     position: absolute;
     top: 50%;
   }
   
 .alert .ttt{
     margin-left: 35px;
+    font-size: 13px;
+    color: #5E6063{{{}}};
 }
 
 .btnclose{
-    width: 10px;
-    height: 10px;
-    margin: 0;
-    color: #F0F0F0;   
+    color: #888;
+    opacity: 1;
+    float: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    margin-top: -12px;
+    font-size: 18px;
+}
+
+
+.p2p-chat-avatar{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.p2p-chat-msg{
+    background: #121315;
+    border-radius: 15px;
+    border: 1px solid #1C1E26;
+}
+.p2p-chat-msg-ans{
+    background: #1C1E26;
+    border-radius: 15px;
+}
+.p2p-chat-msg-ans p{font-size: 14px; color: #AEAEAE;}
+.p2p-chat-msg p{
+    color: #5E6063;
+    font-size: 14px;
+}
+.p2p-chat-msg-time{
+    color: #5E6063;
+    font-size: 12px;
+}
+
+.p2p-chat-input input:focus{
+    color: #bdbdbd !important;
+    font-size: 14px;
+}
+
+.p2p-chat-input span{
+ color: #AEAEAE;
+}
+.p2p-chat-input{
+    border: 1px solid #1C1E26;
+    padding: 5px;
+    padding:10px;
+    border-radius: 50px;
+    width: 100%;
+}
+.p2p-chat-input input{
+    background: none;
+    border: none !important;
+    color: #5E6063;
+    width: 88%;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.p2p-chat-btn{
+    border: none;
+    background: none;
+    padding: 12px 10px 0 0;
+    
+}
+.p2p-chat-btn-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border: none;;
+  border-radius: 35px;
+  color: #1C1E26;
+  font-size: 13px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background: #4CE97D;
+}
+
+
+.p2p-verify-input input:focus{color: #bdbdbd !important;}
+
+.p2p-verify-input a{
+    color: #4CE970;
+    font-size: 14px;
+    text-decoration: none;
+}
+.p2p-verify-input{
+    border: 1px solid #1C1E26;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+.p2p-verify-input input{
+    background: none;
+    border: none !important;
+    color: #5E6063;
+    width: 75%;
+    font-size: 14px;
+    margin-left: 5px;
 }

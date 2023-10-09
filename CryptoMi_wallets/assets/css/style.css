@@ -3,14 +3,21 @@
 @import url("boostrap.css");
 @import url("custom.css");
 
-body, p, a{font-family: 'Poppins', sans-serif !important;}
+body{font-family: 'Poppins', sans-serif !important; background:#000 ;}
+
+p,span{
+    font-family: 'Poppins', sans-serif !important;
+    font-size:14px;
+    color:#5E6063;
+}
+
 h1, 
 h2, 
 h3, 
 h4, 
 h5, 
-h6{color: #FFFFFF;}
-p{color:#5E6063;}
+h6{color: #F0F0F0;}
+
 .icon-24{
     width: 24px;
     height: 24px;
@@ -274,6 +281,7 @@ p{color:#5E6063;}
     color: #5E6063;
 }
 
+.sidebar .nav .nav-item .nav-link:hover{color: #4CE97D;}
 .sidebar .nav .nav-item .nav-link i {color: inherit;}
 .sidebar .nav .nav-item .nav-link i.menu-icon {
     font-size: 1.125rem;
@@ -961,7 +969,9 @@ p{color:#5E6063;}
 .search-form-transactions{width: 99%;}
 .search-form-transactions input{width: 300px;}
 .search-form-transactions i{position: absolute;}
-
+.profile-card-pt{
+    padding-top:-50px;
+}
 
 
 
