@@ -8,6 +8,9 @@
     margin-top:50px;
 }
 
+.fixed{
+    position: fixed !important;
+}
 
 .top-bar-title{
     font-size: 15px;
