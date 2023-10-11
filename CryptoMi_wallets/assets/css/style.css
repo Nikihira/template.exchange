@@ -191,21 +191,23 @@ a .menu-title:hover{
 .user-status-busy {background:#fed713;}
 
 @media (max-width: 991px) {
-  .navbar {display: none !important;}
+	.mobile-disable,
+	.navbar {display: none !important;}
 }
 
 /* Sidebar */
 .sidebar {
-  min-height: calc(100vh - 70px);
-  background: #121315;
-  font-family: "Popins", sans-serif;
-  padding: 0;
-  width: 260px;
-  z-index: 11;
-  transition: width 0.25s ease, background 0.25s ease;
-  -webkit-transition: width 0.25s ease, background 0.25s ease;
-  -moz-transition: width 0.25s ease, background 0.25s ease;
-  -ms-transition: width 0.25s ease, background 0.25s ease; }
+	min-height: calc(100vh - 70px);
+  	background: #121315;
+  	font-family: "Popins", sans-serif;
+  	padding: 0;
+  	width: 260px;
+  	z-index: 11;
+  	transition: width 0.25s ease, background 0.25s ease;
+  	-webkit-transition: width 0.25s ease, background 0.25s ease;
+ 	 -moz-transition: width 0.25s ease, background 0.25s ease;
+  	-ms-transition: width 0.25s ease, background 0.25s ease;
+}
   
 .sidebar .nav {
     overflow: hidden;
@@ -232,6 +234,7 @@ a .menu-title:hover{
     padding: 1.125rem 0 1.125rem 0;
     color: #5E6063;
 }
+
 a.active span{color: #4CE97D;}
 
 .sidebar .nav .nav-item .active svg path {stroke: #4CE970 !important;}
@@ -240,30 +243,35 @@ a.active span{color: #4CE97D;}
 .sidebar .nav .nav-item:hover svg path {stroke: #4CE970;}
 
 .sidebar .nav .nav-item .nav-link i.menu-icon {
+    position: absolute;
     font-size: 1.125rem;
     line-height: 1;
-    margin-left: auto;
+    right: 0;
     color: #5E6063;
 }
             
 .sidebar .nav .nav-item .nav-link i.menu-icon:before {vertical-align: middle;}
+
 .sidebar .nav .nav-item .nav-link i.menu-arrow {
+    position: absolute;
     font: normal normal normal 24px/1 "Material Design Icons";
     line-height: 1;
     font-size: 1.125rem;
-    margin-left: auto;
     color: #5E6063;
 }
             
 .sidebar .nav .nav-item .nav-link i.menu-arrow:before {
+    position: relative;
     content: "\f141";
     font-size: inherit;
     color: inherit;
+    right:-120px;
 }
 
-.sidebar .nav .nav-item .nav-link i.menu-arrow + .menu-icon {margin-left: .25rem;}
+.sidebar .nav .nav-item .nav-link i.menu-arrow + .menu-icon {position: absolute;}
 
-.sidebar .nav .nav-item .nav-link[aria-expanded="true"] .menu-arrow:before {content: "\f140";}
+.sidebar .nav .nav-item .nav-link[aria-expanded="true"] .menu-arrow:before {content: "\f140";
+right: -120px;}
       
 .sidebar .nav .nav-item.active{color: red;}
 
@@ -756,10 +764,18 @@ a.active span{color: #4CE97D;}
 
 .close-modal-x {
     position: absolute;
-    top: 40px;
-    right: 30px;
+    top: 30px;
+    right: 20px;
     text-decoration: none;
     font-size: 14px;
+}
+.close-modal-x span{    
+    width: 32px;
+    height: 32px;
+    background: #1C1E26;
+    border-radius: 50%;
+    color: #F0F0F0;
+    padding: 10px 15px 10px 15px;
 }
 
 .close-modal-button {
@@ -994,14 +1010,7 @@ a.active span{color: #4CE97D;}
     bottom: 0px;
 } 
 
-.close-modal-x span{    
-    width: 32px;
-    height: 32px;
-    background: #1C1E26;
-    border-radius: 50%;
-    color: #F0F0F0;
-    padding: 10px 15px 10px 15px;
-}
+
 .close-modal-x span:hover{
     background: #4CE97D;
     color: #121315;

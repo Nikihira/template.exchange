@@ -4,16 +4,16 @@
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<title>CryptoMi Wallets</title>
-    	<link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
-    	<link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
-     	<link rel="stylesheet" href="../assets/css/style.css">
+    	<link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    	<link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+     	<link rel="stylesheet" href="../../assets/css/style.css">
     	<link rel="shortcut icon" href="assets/images/favicon.ico" />
   	</head>
 <body>
 	<div class="container-scroller">
 		<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
 			<div class="bg-darket text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-				<a class="navbar-brand brand-logo" href="#0"><img src="../assets/images/logo-white.svg" alt="logo" /></a>
+				<a class="navbar-brand brand-logo" href="#0"><img src="../../assets/images/logo-white.svg" alt="logo" /></a>
 			</div>
 			
 			<div class="navbar-menu-wrapper d-flex">
@@ -30,7 +30,7 @@
     				<li class="nav-item nav-profile">
         			<a class="nav-link">
             				<div class="nav-profile-img">
-                				<img src="../assets/images/ava.png" alt="image">
+                				<img src="../../assets/images/ava.png" alt="image">
                 				<div class="user-status-busy"></div>
             				</div>
         				</a>
@@ -63,8 +63,8 @@
 		</nav>
     	<!-- Side bar -->
       	<div class="container-fluid page-body-wrapper">     
-        	<nav class="sidebar  sidebar-offcanvas" id="sidebar">
-        		<ul class="nav fixed">                
+        	<nav class="sidebar sidebar-offcanvas" id="sidebar">
+        		<ul class="nav  fixed">                
             		<li class="nav-item">
               			<a class="nav-link" href="#0">
                 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none"  style="padding-right: 8px;" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +140,7 @@
     			<div class="content-wrapper">
 					<div class="topbar-mobile">
 						<!-- MOBILE TOPBAR NAVIGATION -->
-						<div class="topbar-top d-flex justify-content-between desktop-disabl">
+						<div class="topbar-top d-flex justify-content-start desktop-disable">
 							<div class="col-1">                  
 							    <button class="btn-back">
 							        <div class="sign">
@@ -148,14 +148,15 @@
 							        </div>
 							    </button>
 							</div>
-							<!-- item end --> 							
+							<!-- item end --> 
 						</div>
 						<!-- MOBILE TOPBAR NAVIGATION END -->
 					</div>
 					<!-- topbar-mobile --> 
+
 <section> 
 <div class="row">    
-<div class="col-sm-6 col-md-12 col-lg-6 mt-2 mb-3">
+<div class="col-sm-6 col-md-12 col-lg-6 mt-2">
 <div class="p2p-base-card">        
     <div class="d-flex justify-content-between me-2">
         <div class="d-block">
@@ -164,26 +165,42 @@
 					       </p>
 					       <p class="p2p-amount-sub"><span class="p2p-amount-sub-t">Fiat amount </span>  ₽73,250.70</p>
 					        </p>
-					   </div>
-					   				      
-    </div>
-    <div class="w-50"><button class="p2p-btn-f-g">Payment Received</button></div>
+					   </div>					      
+    </div>	
 </div>
 
 </div>	
-</div>
+	</div>
 <!-- end -->	
 <div class="row">
 <div class="col-sm-12 col-md-12 col-lg-6">
 <div class="p2p-base-card-bg">        
     <div class="d-block me-3 pb-1">
-				    
 <p class="text-in-card">
     Seller has placed an order. Please pay within the time limit, and remember to copy add ref message to payment remark, so the seller can identify the payment.
 </p>
 
 				    </div>     
     </div>                
+</div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-6 mt-2">
+<div class="alert alert-dismissible fade show p2p-base-card-bg" role="alert">
+    
+     <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="#FAE31B"/>
+<path d="M12.645 7.242L12.491 14.242H11.427L11.273 7.242H12.645ZM12.015 17.084C11.7724 17.084 11.567 17 11.399 16.832C11.231 16.664 11.147 16.4587 11.147 16.216C11.147 15.9733 11.231 15.768 11.399 15.6C11.567 15.432 11.7724 15.348 12.015 15.348C12.2484 15.348 12.4444 15.432 12.603 15.6C12.771 15.768 12.855 15.9733 12.855 16.216C12.855 16.4587 12.771 16.664 12.603 16.832C12.4444 17 12.2484 17.084 12.015 17.084Z" fill="#1C1E26"/>
+</svg>
+    </div>
+    <div class="ttt">For saller: Do not release your CRYPTO untill you receive the money to your bank account.</div>
+     
+  <a type="button" class="btnclose" data-bs-dismiss="alert" aria-label="">
+      <i class="mdi mdi-window-close"></i>
+  </a>
+  
+</div> <!-- alert -->
 </div>
 </div> <!-- row -->
 </section>
@@ -194,42 +211,41 @@
           <!-- message 1 -->
           <div class="chat-body">
             <div class="d-flex flex-row justify-content-start mb-4">
-              <img src="../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
+                
+              <img src="../../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
+              
               <div class="p-3 ms-3 p2p-chat-msg">
                <p class="small mb-0">eros vulputate hendrerit nullam patrioque velit urbanitas suas brute possim odio solum interesset inimicus cursus proin eam disputationi amet liber</p>
                <span class="p2p-chat-msg-time">09:11</span>
               </div>
             </div>
 <!-- message  1 end -->
-    <div class="d-flex flex-row justify-content-end mb-4">
+
+<!-- message  2-->
+            <div class="d-flex flex-row justify-content-end mb-4">
               <div class="p-3 me-3 p2p-chat-msg-ans">
                 <p class="small mb-0">Thank you.</p>
                 <span class="p2p-chat-msg-time">09:38</span>
               </div>
-              <img src="../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
+              <img src="../../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
             </div>
 <!-- message 2 end -->
-    <div class="d-flex flex-row justify-content-start mb-4">
+
+<!-- message 3 -->
+            <div class="d-flex flex-row justify-content-start mb-4">
                 
-              <img src="../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
+              <img src="../../assets/images/ava.png" class="p2p-chat-avatar" alt="avatar">
+              
               <div class="p-3 ms-3 p2p-chat-msg">
                <p class="small mb-0">eros vulputate hendrerit</p>
                <span class="p2p-chat-msg-time">09:41</span>
               </div>
             </div>
-<!-- system  message -->
-        <div class="d-flex flex-row justify-content-center mb-4">
-                              
-              <div class="p-3 ms-3 p2p-chat-msg">
-               <p class="small mb-0">
-                   CryptoSalt (real name Alexander Sapogov) has marked the order as paid. Please confirm that you have received the payment and release the asset. Please note: Make sure to log in to your account and confirm that you have received the payment before releasing the asset to avoid losses.
-                   </p>
-               <span class="p2p-chat-msg-time">09:56</span>
-              </div>
-            </div>
-<!-- system message end -->
 
-        <div class="justify-content-center d-flex p2p-base-card">
+
+            
+            
+          <div class="justify-content-center d-flex p2p-base-card">
     
     <div class="">
         <button class="p2p-chat-btn"><label for="file"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,8 +255,11 @@
         </label></button>
 <input id="file" type="file" style="display: none;">
     </div>
-  <div>
-  	<div class="p2p-input-group justify-content-end">
+    
+    <div>
+       
+       
+  <div class="p2p-input-group justify-content-end">
     <form action="" class="p2p-chat-input">
 				    <input type="text" placeholder="Enter total amount" id="search" autocomplete="off">
 				    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,12 +270,18 @@
 </svg>
 
     </form>
-</div>
-  </div>
+</div>     
+       
+       
+    </div>
 </div>  
-        
+            
+            
+            
+            
           </div>
         </div>
+
       </div>
     </div>
 </section>
@@ -264,7 +289,7 @@
 </div> <!-- content wrapper --> 
 </div> <!-- main-panel ends -->
 </div> <!-- page end  -->
-	</div>
-    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+   </div>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
   </body>
 </html>
