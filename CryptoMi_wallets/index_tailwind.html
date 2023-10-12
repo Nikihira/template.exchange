@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
         <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="rpn.css">
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<title>Заголовок страницы</title>
+    	<link rel="stylesheet" href="rpn.css">
+   		<link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    	<script src="https://cdn.tailwindcss.com"></script>
+	</head>
 <body>
-
   <!-- Sidebar -->
-  <div id="application-sidebar" class="rpn-sidebar hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] w-64 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 sm:hidden">
+  <div class="rpn-sidebar hidden fixed top-0 left-0 bottom-0 z-[60] w-52 xl:w-64 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 ">
     <div class="px-6 py-0">
       <a class="flex-none" href="#" aria-label="Brand">
           <img src="images/logo-white.svg" alt="">
       </a>
     </div>
 
-    <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+    <nav class="hs-accordion-group p-4 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
       <ul class="space-y-1.5">
          <li>
             <a class="rpn-side-bar-menu-link flex items-center gap-x-3.5 py-2 px-2.5 text-sm" href="#0">
@@ -77,42 +76,50 @@
   <!-- End Sidebar -->
 
   <!-- navbar -->
-<div class="w-full pt-4 px-0 lg:pl-64">
- <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-3 sm:py-0">
-  <nav class="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
-    <div class="hs-collapse hidden overflow-hidden  basis-full grow sm:block">
-      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
-        <a class="rpn-header-menu-a sm:py-6" href="#0">Markets</a>
-        <a class="rpn-header-menu-a sm:py-6" href="#0">Trade</a>
-       <a class="rpn-header-menu-a sm:py-6" href="#0">Buy Crypto</a>
-       <a class="rpn-header-menu-a sm:py-6" href="#0">Futures</a>
-		<div class="pl-56 nav-profile">
-            <img src="assets/images/ava.png" class="nav-profile-img" alt="image">
-         </div>    
- 		<div class="w-60 search-box">
-			<form action="" class="search-form-top">
+<div class="hidden sm:flex w-full pt-4 px-6 lg:pl-52 xl:pl-64">
+ <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-3">
+
+  <nav class="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-4 lg:px-0 lg:pl-8">
+    
+    <div class="hidden overflow-hidden basis-full grow sm:block">
+     
+      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-2 sm:mt-0">
+        <a class="rpn-header-menu-a sm:px-3" href="#0">Markets</a>
+        <a class="rpn-header-menu-a sm:px-3" href="#0">Trade</a>
+       <a class="rpn-header-menu-a sm:px-3" href="#0">Buy Crypto</a>
+       <a class="rpn-header-menu-a sm:px-3" href="#0">Futures</a>
+		    
+		    <div class="sm:pl-40 lg:pl-8 xl:pl-40 nav-profile">
+            <img src="images/ava.png" class="nav-profile-img" alt="image">
+      </div>
+           
+ 	    	<div class="hidden lg:block lg:w-56  lg:pl-4 xl:w-64 search-box">
+		        	<form action="" class="search-form-top">
 		    	<i class="mdi mdi-magnify"></i>
 				<input class="border-0" type="text" placeholder="Search...." id="search" autocomplete="off">
-			</form>
- 		</div>    
+			        </form>
+ 	    	</div>
+ 	    	<!-- search -->
+ 	    	
  		<div class="flex">
-        	<a class="">
+        	<a class="xl:pl-14">
             	<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.0001 3C15.956 3 17.9224 6.05422 17.9224 8.58824V11.1512C17.9224 11.562 18.0324 11.9653 18.241 12.3191L18.5116 12.7782C19.6118 14.6447 18.2661 17 16.0994 17H7.82562C5.67557 17 4.32776 14.6772 5.3947 12.8105L5.68135 12.309C5.88002 11.9614 5.98452 11.568 5.98452 11.1677V8.58824C5.98452 6.05422 8.04422 3 12.0001 3Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 <path d="M14 19.5H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
          </a>         
     
-         <a class="pl-12">
+         <a class="pl-10">
              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-left: -20px" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="1.5"/>
 <path d="M16.2292 10.1142C16.4333 11.3624 16.4333 12.6376 16.2292 13.8858C15.5614 17.969 14.4421 21 12.0001 21C9.55813 21 8.43879 17.969 7.77102 13.8858C7.56689 12.6376 7.56689 11.3624 7.77102 10.1142C8.43879 6.03103 9.55813 3 12.0001 3C14.4421 3 15.5614 6.03103 16.2292 10.1142Z" stroke="white" stroke-width="1.5"/>
 <path d="M20.5 12L18.0825 12.4266C14.0586 13.1367 9.94142 13.1367 5.91751 12.4266L3.5 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
          </a>
-   
- </div>    
+ </div> 
+    
       </div>
+      
     </div>
   </nav>
 </header>
@@ -120,15 +127,13 @@
   <!-- End navbar -->
 
 <!-- content page -->
-<div class="w-full pt-4 lg:pt-0 lg:pl-64 px-3">
-
- 
+<div class="w-full pt-16 lg:pt-0 lg:pl-52 xl:pl-64 px-3 sm:px-6">
  <div class="max-w-80 mx-auto">
   <!-- Grid -->
-  <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+  <div class="lg:grid lg:grid-cols-2 sm:gap-4 lg:gap-8 xl:gap-20">
     <div>
 
-<div class="w-full lg:max-w-lg lg:pl-14">
+<div class="w-full sm:px-6 lg:px-0 lg:max-w-lg lg:pl-12">
      <nav class="slidemenu">
 		<input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle show-modal" checked/>
   		<label for="slide-item-1"><span>Primary</span></label>
@@ -148,9 +153,9 @@
  </div><!-- menu num 2 -->
   
 
-<div class="w-full lg:max-w-lg lg:pl-14">	
-		<div class="flex flex-col min-w-0 break-words balance-bg rounded-xl mb-6 lg:justify-start">
-    	<div class="">
+<div class="w-full sm:justify-center lg:justify-start lg:pl-14">	
+		<div class="flex flex-col min-w-0 break-words  rounded-xl mb-6 lg:justify-start sm:px-36 lg:px-0">
+    	<div class="balance-bg">
       		<div class="flex flex-wrap justify-center lg:justify-start">
       			<div class="text-center lg:text-left pt-6">
         			<div class="wallet-balance mt-0 mb-2">
@@ -200,9 +205,10 @@
     </div>
     <!-- End Col -->
 
+   
     <div class="relative">
       
-<div class="hidden lg:block pt-16 max-w-lg rounded-xl overflow-hidden">
+<div class="hidden lg:block lg:pt-10 xl:pt-10 max-w-lg rounded-xl overflow-hidden">
        
 <div class="flex pb-4">
 
@@ -212,7 +218,7 @@
 <path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 </svg>
-              				<span class="text-base">Buy</span>
+              				<span class="text-sm">Buy</span>
             			</div>
             			
             			<div class="mr-6 text-center">
@@ -221,7 +227,7 @@
 <path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 </svg>
-              				<span class="text-base">Sell</span>
+              				<span class="text-sm">Sell</span>
             			</div>
 
      			<div class="text-center">
@@ -230,13 +236,10 @@
 <path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 </svg>
-              				<span class="text-base">Withdraw</span>
+              				<span class="text-sm">Withdraw</span>
             			</div>
       
 </div>
-    
-    
-    
     <div class="md:flex recent-transaction">
         <div class="w-full p-4">
 
@@ -249,13 +252,10 @@
 </div>
     
 </div>
-
-
-
 			<ul>
 				<li class="flex justify-between items-center cursor-pointer pb-2 mt-2 border-b border-color-1c">
     				<div class="flex">
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 5px" xmlns="http://www.w3.org/2000/svg">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 2px" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
@@ -273,7 +273,7 @@
 				</li>
 				<li class="flex justify-between items-center cursor-pointer pb-2 mt-2">
     				<div class="flex">
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 5px" xmlns="http://www.w3.org/2000/svg">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 2px" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
 <path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
@@ -293,20 +293,14 @@
         </div>
     </div>
 </div>
-
-     
     </div>
     <!-- End Col -->
-      
   </div>
   <!-- End Grid -->
 </div>
 <!-- End Hero -->
- 
 
-
-
-<div class="max-w-lg rounded-lg overflow-hidden lg:pl-10">
+<div class="max-w-md rounded-lg overflow-hidden lg:pl-10">
     <div class="md:flex">
         <div class="w-full">
 			<div>
@@ -347,17 +341,7 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 </div> <!-- content page --> 
-
-
 <script src="js/preline.js"></script>
-
 </body>
 </html>
