@@ -9,6 +9,7 @@
     	<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 <body>
+<div class="max-wscreen-7xl">
   <!-- Sidebar -->
   <div class="rpn-sidebar hidden fixed top-0 left-0 bottom-0 z-[60] w-52 xl:w-64 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 ">
     <div class="px-6 py-0">
@@ -79,21 +80,24 @@
 <div class="hidden sm:flex w-full pt-4 px-6 lg:pl-52 xl:pl-64">
  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-3">
 
-  <nav class="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-4 lg:px-0 lg:pl-8">
+  <nav class="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-4 lg:px-0 lg:pl-8 2xl:pl-16">
     
-    <div class="hidden overflow-hidden basis-full grow sm:block">
+    <div class="hidden overflow-hidden basis-auto grow sm:flex">
      
-      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-2 sm:mt-0">
-        <a class="rpn-header-menu-a sm:px-3" href="#0">Markets</a>
-        <a class="rpn-header-menu-a sm:px-3" href="#0">Trade</a>
-       <a class="rpn-header-menu-a sm:px-3" href="#0">Buy Crypto</a>
-       <a class="rpn-header-menu-a sm:px-3" href="#0">Futures</a>
-		    
-		    <div class="sm:pl-40 lg:pl-8 xl:pl-40 nav-profile">
+      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-2 sm:mt-3">
+        <a class="rpn-header-menu-a sm:px-3 2xl:pr-16" href="#0">Markets</a>
+        <a class="rpn-header-menu-a sm:px-3 2xl:px-14" href="#0">Trade</a>
+       <a class="rpn-header-menu-a sm:px-3 2xl:px-14" href="#0">Buy Crypto</a>
+       <a class="rpn-header-menu-a sm:px-3 2xl:px-14" href="#0">Futures</a>
+		    </div>
+		   
+		   <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-2 sm:mt-0 absolute right-0 xl:right-20 2xl:right-96">
+		 
+		    <div class="nav-profile">
             <img src="images/ava.png" class="nav-profile-img" alt="image">
-      </div>
+         </div>
            
- 	    	<div class="hidden lg:block lg:w-56  lg:pl-4 xl:w-64 search-box">
+ 	    	<div class="hidden lg:block lg:pl-4 w-64  search-box">
 		        	<form action="" class="search-form-top">
 		    	<i class="mdi mdi-magnify"></i>
 				<input class="border-0" type="text" placeholder="Search...." id="search" autocomplete="off">
@@ -102,7 +106,7 @@
  	    	<!-- search -->
  	    	
  		<div class="flex">
-        	<a class="xl:pl-14">
+        	<a class="xl:pl-4">
             	<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.0001 3C15.956 3 17.9224 6.05422 17.9224 8.58824V11.1512C17.9224 11.562 18.0324 11.9653 18.241 12.3191L18.5116 12.7782C19.6118 14.6447 18.2661 17 16.0994 17H7.82562C5.67557 17 4.32776 14.6772 5.3947 12.8105L5.68135 12.309C5.88002 11.9614 5.98452 11.568 5.98452 11.1677V8.58824C5.98452 6.05422 8.04422 3 12.0001 3Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 <path d="M14 19.5H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
@@ -116,9 +120,9 @@
 <path d="M20.5 12L18.0825 12.4266C14.0586 13.1367 9.94142 13.1367 5.91751 12.4266L3.5 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
          </a>
- </div> 
-    
-      </div>
+ </div>
+    </div>
+      
       
     </div>
   </nav>
@@ -128,12 +132,14 @@
 
 <!-- content page -->
 <div class="w-full pt-16 lg:pt-0 lg:pl-52 xl:pl-64 px-3 sm:px-6">
- <div class="max-w-80 mx-auto">
+    
+ <div class="w-full mx-auto">
   <!-- Grid -->
-  <div class="lg:grid lg:grid-cols-2 sm:gap-4 lg:gap-8 xl:gap-20">
+  
+  <div class="lg:grid lg:grid-cols-2 sm:gap-4 lg:gap-8 xl:gap-20 2xl:gap-1">
     <div>
 
-<div class="w-full sm:px-6 lg:px-0 lg:max-w-lg lg:pl-12">
+<div class="w-full sm:px-6 lg:px-0 lg:max-w-lg lg:pl-12 2xl:max-w-2xl">
      <nav class="slidemenu">
 		<input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle show-modal" checked/>
   		<label for="slide-item-1"><span>Primary</span></label>
@@ -208,7 +214,7 @@
    
     <div class="relative">
       
-<div class="hidden lg:block lg:pt-10 xl:pt-10 max-w-lg rounded-xl overflow-hidden">
+<div class="hidden lg:block lg:pt-10 xl:pt-10 max-w-lg 2xl:max-w-2xl 2xl:ml-12 rounded-xl overflow-hidden">
        
 <div class="flex pb-4">
 
@@ -300,7 +306,7 @@
 </div>
 <!-- End Hero -->
 
-<div class="max-w-md rounded-lg overflow-hidden lg:pl-10">
+<div class="max-w-md 2xl:max-w-2xl 2xl:w-full rounded-lg overflow-hidden lg:pl-10">
     <div class="md:flex">
         <div class="w-full">
 			<div>
@@ -341,7 +347,9 @@
         </div>
     </div>
 </div>
+</div>
 </div> <!-- content page --> 
+
 <script src="js/preline.js"></script>
 </body>
 </html>

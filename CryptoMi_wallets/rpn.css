@@ -209,6 +209,18 @@ a .menu-title:hover{
 
 .slide-toggle{display: none;}
 
+
+@media(min-width: 1610px){
+  .slidemenu label{
+  width: 60%;
+  display: block;
+  float: center;
+}
+.slider .bar{
+  width: 60%;
+  }
+}
+
 .slidemenu{
   font-family: "Popins", sans-serif;
   letter-spacing: 1.3px;
