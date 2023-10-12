@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.rpn-header-menu-a{
+    color: #F0F0F0;
+    font-size: 14px;
+    background: none;
+}
+.rpn-header-menu-a:hover{
+    color: #4CE97D;
+}
+
+.rpn-side-bar-menu-link{
+    color: #5E6063;
+}
+.rpn-side-bar-menu-link:hover{color: #4CE97D;}
+
+.rpn-side-bar-menu-link svg path {stroke: #5E6063;}
+
+.rpn-side-bar-menu-link:hover svg path {stroke: #4CE970;}
+
+.rpn-sidebar{
+  background: #121315;  
+}
+.nav-profile-img{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+.border-color-1c{border-color: rgba(255,255,255,0.05);}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #5E6063;
+    font-size: 14px;
+}
+
+
+.icon-24{
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    margin-top: -5px;
+}
+
+  
+a .menu-title:hover{
+    color: #4CE97D;
+    letter-spacing: normal;
+}
+
+.list-group-item{
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid #1C1E26;
+    background: #121315;
+}
+
+.crypto-icon{
+    height: 38px;
+    width: 38px;
+}
+
+.bg-darket{
+    background: #121315;
+    background-color:#121315;
+}
+
+.menu-main {
+  list-style: none;
+  text-align: right;
+  padding-top: 25px;
+}
+
+.menu-main li {
+    display: inline-block;
+    vertical-align:top;
+    padding: 0 0 0 30px;
+}
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 15px;
+  display: inline-block;
+  transition: color .2s;
+  color: #FFFFFF !important;
+}
+
+.menu-main a, .menu-main a:visited {color: #5E6063;}
+
+.menu-main a.current, .menu-main a:hover{color: #4CE970 !important;}
+
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+
+/* search box on the top */
+
+.search-form-top input:after{border: none;}
+
+.search-form-top input:focus{
+    color: #bdbdbd !important;
+    border: none !important;    
+}
+
+.search-form-top i{
+    position: absolute;
+    color: #5E6063;
+    font-size: 18px;
+}
+
+.search-form-top{
+    border: 1px solid #5E6063 !important;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.search-form-top input{
+    background: #000 !important;
+    border: none !important;
+    color: #5E6063;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.wallet-convert{
+    font-size: 14px;
+    color: #F0F0F0;
+    font-weight: 400;
+}
+
+.wallet-sum{
+    color: #F0F0F0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 19px;
+}
+
+.wallet-balance{
+    color: #5E6063;
+    font-size: 16px;
+}
+
+/*
+#
+# Crypto currency style 
+#
+*/
+.crypto-sum,
+.crypto-name{
+    color: #F0F0F0;
+    font-size:14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.crypto-cent{color: #5E6063;}
+
+.crypto-percent-min{color: red; font-size: 13px;}
+
+.crypto-percent-plus{color: #4CE97D; font-size: 13px;}
+
+.crypto-network{
+    color: #5E6063;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/*
+#
+# Style for Transaction s history left bottom block 
+#
+*/
+
+.trans-name{
+    color: #fff;
+    font-size:16px;
+    font-weight: 400;
+}
+.trans-sum{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+}
+.trans-min{
+    font-size: 14px;
+    color: #5E6063;
+}
+.trans-date{color: #5E6063;font-size: 14px;}
+
+
+/*
+#
+# Second menu setting 
+#
+*/
+.wallets-menu{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.clear{clear: both;}
+
+.slide-toggle{display: none;}
+
+.slidemenu{
+  font-family: "Popins", sans-serif;
+  letter-spacing: 1.3px;
+  width: 100%;
+  margin: 35px auto;
+  overflow: auto;
+}
+
+.slidemenu label{
+  width: 25%;
+  display: block;
+  float: left;
+  color: #5E6063;
+
+}
+
+.slidemenu label:hover{
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.slidemenu label span{
+  display: block;
+  padding: 10px;
+  text-align: center;   
+}
+
+.slider{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #5E6063;
+  margin-top: 7px;
+}
+
+.slider .bar{
+  width: 24%;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.slidemenu label, .slider .bar {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+}
+
+.slidemenu .slide-toggle:checked + label{color: #FFFFFF;}
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+/*
+#
+# Style for last transaction block 
+#
+*/
+.recent-transaction{
+    background: #121315;
+    border-radius: 20px;
+}
+
+.recent-transaction-a{
+    font-size: 15;
+    color: #4CE97D;
+    text-decoration:none;
+}
+
+.recent-transaction-a:hover{color: #18873A;}
+
+.menu-left ul li{
+    left: 10px;
+    padding: 0 30px 0 12px;    
+}
+
+.menu-left ul{
+    padding: 24px 6 0 50px;
+    margin: 0px; 
+}
+
+/*
+#
+# media request for responsibility 
+#
+*/
+
+
+    
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+.menu-main{text-align: center;}
+.menu-left ul{
+    padding: 23px 0 0 0;
+    margin: 0px;    
+}
+.menu-left ul li{padding: 0 20px 0 0;}
+.wallet-sum{font-size: 26px;}
+
+} /* min width 992 max 1199.98 END*/
+
+
+/*
+#
+# max-width 440px START
+#
+*/
+@media(max-width: 440px){
+
+.wallet-sum{font-size: 26px;}
+
+.wallets-menu{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.crypto-icon{
+    width: 38px;
+    height: 38px;
+}  
+
+.crypto-percent-min,
+.crypto-percent-plus, 
+.crypto-network{font-size: 14px;}
+
+.balance-bg{
+    padding-top: 10px;
+    background: #121315;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slidemenu label{
+    margin: 0px;    
+    width: 25%;
+}
+
+.slidemenu{
+    justify-content: center;
+    align-items: center;
+    margin-top:-40px;
+    width: 100%;
+    
+}
+
+.funding{padding-left: 15px;}
+
+.slidemenu label span{
+    padding: 1px;
+    text-align: center;       
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.slider .bar{width: 25%;}

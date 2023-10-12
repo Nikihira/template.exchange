@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="rpn.css">
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="application-sidebar" class="rpn-sidebar hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] w-64 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 sm:hidden">
+    <div class="px-6 py-0">
+      <a class="flex-none" href="#" aria-label="Brand">
+          <img src="images/logo-white.svg" alt="">
+      </a>
+    </div>
+
+    <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+      <ul class="space-y-1.5">
+         <li>
+            <a class="rpn-side-bar-menu-link flex items-center gap-x-3.5 py-2 px-2.5 text-sm" href="#0">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.2 21.9997L16.8 21.9997C19.1196 21.9997 21 20.1193 21 17.7997L21 10.4991C21 9.13031 20.333 7.8474 19.2126 7.06115L14.4126 3.69272C12.9647 2.67664 11.0353 2.67664 9.58741 3.69272L4.78741 7.06115C3.66699 7.8474 3 9.13031 3 10.4991L3 17.7997C3 20.1193 4.8804 21.9997 7.2 21.9997Z" stroke="#5E6063" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M15 18H9" stroke="#5E6063" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+                Dashboard 
+            </a>
+        </li>
+        <li>
+            <a class="rpn-side-bar-menu-link flex items-center gap-x-3.5 py-2 px-2.5" href="#0">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.73965 9.20626C5.88646 9.59762 5.17005 10.2356 4.68276 11.0378C4.19546 11.8401 3.95963 12.7699 4.00565 13.7075C4.0067 15.0949 4.48786 16.4392 5.36745 17.5122L6.18869 20.319C6.24228 20.5105 6.35617 20.6796 6.51345 20.8013C6.67074 20.9231 6.86306 20.9908 7.0619 20.9947H9.31771C9.56772 20.9865 9.80459 20.8807 9.97754 20.7C10.1505 20.5193 10.2458 20.278 10.2429 20.0279V19.1547H13.1952V19.9447C13.191 20.0676 13.2111 20.1901 13.2543 20.3052C13.2975 20.4203 13.363 20.5258 13.447 20.6156C13.531 20.7053 13.6319 20.7777 13.7439 20.8285C13.8558 20.8793 13.9767 20.9075 14.0996 20.9115H16.3762C16.5746 20.906 16.7661 20.8377 16.9231 20.7162C17.0801 20.5947 17.1943 20.4265 17.2494 20.2358L18.0706 17.429C18.1538 17.138 18.2786 16.5974 18.4033 15.9321L19.2557 15.7554C20.0874 15.5475 20.6383 15.142 20.6383 14.3936V12.6679C20.6385 12.4796 20.6005 12.2932 20.5266 12.12C20.4528 11.9468 20.3445 11.7904 20.2085 11.6602C20.0725 11.53 19.9115 11.4287 19.7352 11.3625C19.5589 11.2963 19.3711 11.2665 19.183 11.2749H18.3929C17.9822 10.2963 17.2914 9.46089 16.4074 8.8736C16.433 8.3938 16.5312 7.92065 16.6985 7.47022C17.0311 6.69057 17.1974 6.68017 17.0831 6.6074C16.8104 6.48176 16.5105 6.42639 16.2109 6.44637C15.9113 6.46634 15.6215 6.56102 15.3678 6.72175C15.158 6.84814 14.9686 7.00589 14.8065 7.18955" stroke="#5E6063" stroke-width="1.5801" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.61328 11.6179H12.7319" stroke="#5E6063" stroke-width="1.55931" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5072 8.72787C11.2654 8.72787 11.9925 8.42668 12.5286 7.89057C13.0647 7.35445 13.3659 6.62732 13.3659 5.86913C13.3659 5.10999 13.0651 4.38179 12.5292 3.84402C11.9934 3.30625 11.2663 3.00275 10.5072 3C9.74804 3.00275 9.02093 3.30625 8.48511 3.84402C7.94929 4.38179 7.64843 5.10999 7.64844 5.86913C7.64844 6.62732 7.94962 7.35445 8.48574 7.89057C9.02186 8.42668 9.74899 8.72787 10.5072 8.72787Z" stroke="#5E6063" stroke-width="1.3" stroke-linecap="round"/>
+<path d="M15.5961 10.7551C15.3901 10.7578 15.1934 10.8408 15.0477 10.9865C14.9021 11.1321 14.8191 11.3288 14.8164 11.5348C14.8191 11.7407 14.9021 11.9375 15.0477 12.0831C15.1934 12.2287 15.3901 12.3117 15.5961 12.3144C15.8038 12.3145 16.0032 12.2326 16.1511 12.0867C16.2989 11.9408 16.3834 11.7425 16.3861 11.5348C16.3834 11.3271 16.2989 11.1288 16.1511 10.9828C16.0032 10.8369 15.8038 10.7551 15.5961 10.7551Z" fill="#5E6063"/>
+</svg>
+                Earn
+            </a>
+        </li>
+       <li class="hs-accordion" id="account-accordion">
+          <a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link" href="#0">
+
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="padding-right: 8px;" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.4435 9.9846V7.50591C21.4385 6.85336 21.1784 6.22866 20.7188 5.76543C20.2592 5.30221 19.6365 5.03724 18.984 5.02722L16.4765 5.02722" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.00002 15.1693L3.00002 17.6479C2.99875 17.9743 3.06193 18.2976 3.18593 18.5994C3.30993 18.9013 3.49231 19.1757 3.72261 19.4069C3.9529 19.638 4.22657 19.8215 4.52793 19.9466C4.82929 20.0718 5.15239 20.1362 5.47871 20.1362H7.967" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.32823 10.4553C8.79757 10.4553 9.25636 10.3161 9.6466 10.0554C10.0368 9.79463 10.341 9.42402 10.5206 8.99041C10.7002 8.5568 10.7472 8.07966 10.6556 7.61935C10.5641 7.15903 10.3381 6.7362 10.0062 6.40433C9.67433 6.07246 9.2515 5.84645 8.79118 5.75489C8.33086 5.66332 7.85373 5.71032 7.42012 5.88993C6.98651 6.06953 6.6159 6.37369 6.35515 6.76393C6.0944 7.15416 5.95522 7.61296 5.95522 8.0823C5.95007 8.70328 6.19053 9.30114 6.62422 9.74562C7.0579 10.1901 7.64967 10.4452 8.27059 10.4553H8.32823Z" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.9513 13.4624C10.2623 12.7801 9.33181 12.3973 8.36212 12.3973C7.39244 12.3973 6.46195 12.7801 5.77295 13.4624" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.9538 14.6442C16.4231 14.6442 16.8819 14.505 17.2721 14.2443C17.6624 13.9835 17.9665 13.6129 18.1461 13.1793C18.3257 12.7457 18.3727 12.2686 18.2812 11.8083C18.1896 11.3479 17.9636 10.9251 17.6317 10.5932C17.2999 10.2614 16.877 10.0354 16.4167 9.94379C15.9564 9.85223 15.4793 9.89922 15.0456 10.0788C14.612 10.2584 14.2414 10.5626 13.9807 10.9528C13.7199 11.3431 13.5807 11.8019 13.5807 12.2712C13.5807 12.9006 13.8308 13.5041 14.2758 13.9492C14.7208 14.3942 15.3244 14.6442 15.9538 14.6442Z" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5452 17.6609C18.2052 17.3207 17.8016 17.0509 17.3573 16.8668C16.9131 16.6827 16.4369 16.5879 15.956 16.5879C15.4751 16.5879 14.9989 16.6827 14.5546 16.8668C14.1104 17.0509 13.7068 17.3207 13.3668 17.6609" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.7949 3L15.2865 4.74853C15.2017 4.84939 15.1601 4.97971 15.1709 5.11107C15.1817 5.24244 15.244 5.36421 15.3442 5.44987L17.0639 6.95821" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.80415 22L9.3125 20.2419C9.39501 20.14 9.43506 20.0103 9.42432 19.8796C9.41359 19.749 9.35289 19.6275 9.25486 19.5405L7.51593 18.0514" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            P2P
+            <i class="mdi mdi-chevron-down"></i>
+          </a>
+          <div id="account-accordion-child" class="hs-accordion-content w-full overflow-hidden hidden">
+            <ul class="pt-2 pl-2">
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link" href="#0">
+                <i class="mdi mdi-arrow-right"></i>  Link 1
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link" href="#0">
+                <i class="mdi mdi-arrow-right"></i>   Link 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>        
+      </ul>
+    </nav>
+  </div>
+  <!-- End Sidebar -->
+
+  <!-- navbar -->
+<div class="w-full pt-4 px-0 lg:pl-64">
+ <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-3 sm:py-0">
+  <nav class="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+    <div class="hs-collapse hidden overflow-hidden  basis-full grow sm:block">
+      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+        <a class="rpn-header-menu-a sm:py-6" href="#0">Markets</a>
+        <a class="rpn-header-menu-a sm:py-6" href="#0">Trade</a>
+       <a class="rpn-header-menu-a sm:py-6" href="#0">Buy Crypto</a>
+       <a class="rpn-header-menu-a sm:py-6" href="#0">Futures</a>
+		<div class="pl-56 nav-profile">
+            <img src="assets/images/ava.png" class="nav-profile-img" alt="image">
+         </div>    
+ 		<div class="w-60 search-box">
+			<form action="" class="search-form-top">
+		    	<i class="mdi mdi-magnify"></i>
+				<input class="border-0" type="text" placeholder="Search...." id="search" autocomplete="off">
+			</form>
+ 		</div>    
+ 		<div class="flex">
+        	<a class="">
+            	<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0001 3C15.956 3 17.9224 6.05422 17.9224 8.58824V11.1512C17.9224 11.562 18.0324 11.9653 18.241 12.3191L18.5116 12.7782C19.6118 14.6447 18.2661 17 16.0994 17H7.82562C5.67557 17 4.32776 14.6772 5.3947 12.8105L5.68135 12.309C5.88002 11.9614 5.98452 11.568 5.98452 11.1677V8.58824C5.98452 6.05422 8.04422 3 12.0001 3Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M14 19.5H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+         </a>         
+    
+         <a class="pl-12">
+             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-left: -20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="1.5"/>
+<path d="M16.2292 10.1142C16.4333 11.3624 16.4333 12.6376 16.2292 13.8858C15.5614 17.969 14.4421 21 12.0001 21C9.55813 21 8.43879 17.969 7.77102 13.8858C7.56689 12.6376 7.56689 11.3624 7.77102 10.1142C8.43879 6.03103 9.55813 3 12.0001 3C14.4421 3 15.5614 6.03103 16.2292 10.1142Z" stroke="white" stroke-width="1.5"/>
+<path d="M20.5 12L18.0825 12.4266C14.0586 13.1367 9.94142 13.1367 5.91751 12.4266L3.5 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+         </a>
+   
+ </div>    
+      </div>
+    </div>
+  </nav>
+</header>
+  </div>
+  <!-- End navbar -->
+
+<!-- content page -->
+<div class="w-full pt-4 lg:pt-0 lg:pl-64 px-3">
+
+ 
+ <div class="max-w-80 mx-auto">
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+    <div>
+
+<div class="w-full lg:max-w-lg lg:pl-14">
+     <nav class="slidemenu">
+		<input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle show-modal" checked/>
+  		<label for="slide-item-1"><span>Primary</span></label>
+  		<input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+  			<label for="slide-item-2">
+  				<span>Trading</span>
+  			</label>
+  			<input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+  			<label for="slide-item-3"><span>Funding</span></label>
+  			<input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+  			<label for="slide-item-4"><span>Earn</span></label>
+  			<div class="clear"></div>
+  			<div class="slider">
+    			<div class="bar"></div>
+  			</div>
+		</nav> 				             
+ </div><!-- menu num 2 -->
+  
+
+<div class="w-full lg:max-w-lg lg:pl-14">	
+		<div class="flex flex-col min-w-0 break-words balance-bg rounded-xl mb-6 lg:justify-start">
+    	<div class="">
+      		<div class="flex flex-wrap justify-center lg:justify-start">
+      			<div class="text-center lg:text-left pt-6">
+        			<div class="wallet-balance mt-0 mb-2">
+          				Balance
+        			</div>
+        			<p class="wallet-sum mb-2">
+          				$1.000<span class="crypto-cent">,00 USDT</span> 
+        			</p>
+        			<div class="wallet-convert mt-0 mb-2">
+          				≈ 0.0000080 BTC
+        			</div>
+      			</div>
+      			<div class="md:hidden w-full border-b border-color-1c"></div>
+        		<div class="w-full text-center lg:hidden">
+          			<div class="flex justify-center">
+            			<div class="pt-6 pr-9 pl-6 pb-4 text-center border-r border-color-1c">
+            				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>  
+              				<span class="text-base">Buy</span>
+            			</div>
+            			<div class="pr-8 pt-6 pl-9 text-center border-r border-color-1c">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+              <span class="text-base mt-3">Sell</span>
+            </div>
+            			<div class="pt-6 ml-8 text-center">
+              				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" class="ml-4" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+              				<span class="text-base">Withdraw</span>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      	</div>
+    </div>
+</div>
+    <!-- col down -->
+    </div>
+    <!-- End Col -->
+
+    <div class="relative">
+      
+<div class="hidden lg:block pt-16 max-w-lg rounded-xl overflow-hidden">
+       
+<div class="flex pb-4">
+
+     			<div class="mr-6 text-center">
+              				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+              				<span class="text-base">Buy</span>
+            			</div>
+            			
+            			<div class="mr-6 text-center">
+              				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+              				<span class="text-base">Sell</span>
+            			</div>
+
+     			<div class="text-center">
+              				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" class="ml-4" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+              				<span class="text-base">Withdraw</span>
+            			</div>
+      
+</div>
+    
+    
+    
+    <div class="md:flex recent-transaction">
+        <div class="w-full p-4">
+
+<div class="flex items-center justify-between pb-4">
+
+
+<div><p class="recent-transaction-title">Recent transactions</p></div>
+<div>
+    <a class="recent-transaction-a px-2 mt-2">View all</a>
+</div>
+    
+</div>
+
+
+
+			<ul>
+				<li class="flex justify-between items-center cursor-pointer pb-2 mt-2 border-b border-color-1c">
+    				<div class="flex">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 5px" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+        				<div class="flex flex-col ml-2">
+           					<span class="trans-name">Buy BTC</span>
+       <span class="trans-date">03.10.2023</span>
+       					</div>
+   		 			</div>
+    				<div class="flex flex-col text-right">
+        				
+        				<span class="trans-sum">+0,05650</span>
+    <span class="trans-min">-1,255.85 USD</span>
+   					</div>
+				</li>
+				<li class="flex justify-between items-center cursor-pointer pb-2 mt-2">
+    				<div class="flex">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="margin-top: 5px" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 13.8586L21.1426 21.2832" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M22.1536 16.0311L22.1537 21.6451C22.1536 22.0593 21.8178 22.3951 21.4036 22.3952L15.7896 22.3951" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+        				<div class="flex flex-col ml-2">
+           					<span class="trans-name">Buy BTC</span>
+       <span class="trans-date">03.10.2023</span>
+       					</div>
+   		 			</div>
+    				<div class="flex flex-col text-right">
+        				
+        				<span class="trans-sum">+0,05650</span>
+    <span class="trans-min">-1,255.85 USD</span>
+   					</div>
+				</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+     
+    </div>
+    <!-- End Col -->
+      
+  </div>
+  <!-- End Grid -->
+</div>
+<!-- End Hero -->
+ 
+
+
+
+<div class="max-w-lg rounded-lg overflow-hidden lg:pl-10">
+    <div class="md:flex">
+        <div class="w-full">
+			<div>
+  				<h2 class="rpn-title text-xl">My assets</h2>   
+			</div>
+			<ul>
+				<li class="flex justify-between items-center bg-darket mt-3 p-4 rounded-xl cursor-pointer">
+    				<div class="flex">
+        				<img src="images/cryptoicons/ethereum.svg" width="42" height="42" class="rounded">
+        				<div class="flex flex-col ml-2">
+           					<span class="crypto-name">USDT</span>
+            				<span class="crypto-network">Teather</span>
+       					</div>
+   		 			</div>
+    				<div class="flex flex-col text-right">
+        				
+        				<span class="crypto-sum">$793,08
+        				</span>
+        				<span class="crypto-percent-plus">+38%</span>
+   					</div>
+				</li>
+				<li class="flex justify-between items-center bg-darket mt-3 p-4 rounded-xl cursor-pointer">
+    				<div class="flex">
+        				<img src="images/cryptoicons/ethereum.svg" width="42" height="42" class="rounded">
+        				<div class="flex flex-col ml-2">
+           					<span class="crypto-name">USDT</span>
+            				<span class="crypto-network">Teather</span>
+       					</div>
+   		 			</div>
+    				<div class="flex flex-col text-right">
+        				
+        				<span class="crypto-sum">$73,08
+        				</span>
+        				<span class="crypto-percent-min">-8%</span>
+   					</div>
+				</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</div> <!-- content page --> 
+
+
+<script src="js/preline.js"></script>
+
+</body>
+</html>
