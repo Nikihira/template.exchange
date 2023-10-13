@@ -36,7 +36,10 @@ body {
     font-size: 14px;
 }
 
-
+.main-title{
+font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;}
 .icon-24{
     width: 24px;
     height: 24px;
@@ -66,36 +69,6 @@ a .menu-title:hover{
     background: #121315;
     background-color:#121315;
 }
-
-.menu-main {
-  list-style: none;
-  text-align: right;
-  padding-top: 25px;
-}
-
-.menu-main li {
-    display: inline-block;
-    vertical-align:top;
-    padding: 0 0 0 30px;
-}
-
-.menu-main a {
-  text-decoration: none;
-  letter-spacing: 1px;
-  position: relative;
-  font-size: 15px;
-  display: inline-block;
-  transition: color .2s;
-  color: #FFFFFF !important;
-}
-
-.menu-main a, .menu-main a:visited {color: #5E6063;}
-
-.menu-main a.current, .menu-main a:hover{color: #4CE970 !important;}
-
-.menu-main a:hover:before, .menu-main .current:before {left: 0;}
-
-.menu-main a:hover:after, .menu-main .current:after {right: 0;}
 
 /* search box on the top */
 
@@ -210,15 +183,47 @@ a .menu-title:hover{
 .slide-toggle{display: none;}
 
 
-@media(min-width: 1610px){
-  .slidemenu label{
-  width: 60%;
+@media(min-width: 1530px){
+ 
+ .slidemenu label{
+  width: 25%;
   display: block;
-  float: center;
+  float: left;
+  color: #5E6063;
+
 }
+
+.slidemenu label:hover{
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.slidemenu label span{
+  display: block;
+  padding: 0px;
+  text-align: left !important;   
+}
+
+.slider{
+  width: 93% !important;
+  height: 1px;
+  display: block;
+  background: #5E6063;
+  margin-top: 7px;
+}
+
 .slider .bar{
-  width: 60%;
-  }
+  width: 12% !important;
+  height: 1px;
+  background: #FFFFFF;
+}
+  .slidemenu .slide-toggle:checked + label{color: #FFFFFF;}
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 27% !important; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 54% !important; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 80% !important; }
+
+  
 }
 
 .slidemenu{
@@ -250,7 +255,7 @@ a .menu-title:hover{
 
 .slider{
   width: 100%;
-  height: 2px;
+  height: 1px;
   display: block;
   background: #5E6063;
   margin-top: 7px;
@@ -258,7 +263,7 @@ a .menu-title:hover{
 
 .slider .bar{
   width: 24%;
-  height: 2px;
+  height: 1px;
   background: #FFFFFF;
 }
 
@@ -292,15 +297,6 @@ a .menu-title:hover{
 
 .recent-transaction-a:hover{color: #18873A;}
 
-.menu-left ul li{
-    left: 10px;
-    padding: 0 30px 0 12px;    
-}
-
-.menu-left ul{
-    padding: 24px 6 0 50px;
-    margin: 0px; 
-}
 
 /*
 #
@@ -312,12 +308,6 @@ a .menu-title:hover{
     
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-.menu-main{text-align: center;}
-.menu-left ul{
-    padding: 23px 0 0 0;
-    margin: 0px;    
-}
-.menu-left ul li{padding: 0 20px 0 0;}
 .wallet-sum{font-size: 26px;}
 
 } /* min width 992 max 1199.98 END*/
