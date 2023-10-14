@@ -4,12 +4,12 @@
 .c-white-1{color: #AEAEAE !important;}
 .c-green{color: #4CE97D !important;}
 .c-gray{color: #5E6063 !important;}
+.text-color-1c{color: #1C1E26 !important;}}
 
 .b-1c{background: #1C1E26 !important;}
-
-
-
-
+.b-white{background: #F0F0F0 !important;}
+.b-green{background: #4CE97D !important;}
+.border-green{border-color: #4CE97D !important;}
 
 .rounded-25{border-radius: 25px !important;}
 .tabs{
@@ -711,3 +711,7 @@ a .menu-title:hover{
 }
 .p2p-info-card-content p.c-gray{color: #5E6063 !important;}
 
+.select-currency-a a:hover{color: #F0F0F0 !important;}
+
+.fbtn:active,
+.fbtn:hover{color:#FFFFFF !important;}
