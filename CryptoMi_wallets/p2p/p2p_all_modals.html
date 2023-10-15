@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<title>p2p success modals</title>
+    	<link rel="stylesheet" href="../rpn.css">
+   		<link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+    	<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+<body>
+  <!-- Sidebar -->
+  <div class="rpn-sidebar hidden fixed top-0 left-0 bottom-0 z-40 w-52 xl:w-64 pt-3 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 ">
+    <div class="px-6 py-0">
+      <a class="flex-none" href="#" aria-label="Brand">
+          <img src="../images/logo-white.svg" alt="">
+      </a>
+    </div>
+    <nav class="hs-accordion-group p-4 pt-9 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+    	<ul class="space-y-1.5">
+	        <li>
+	            <a class="rpn-side-bar-menu-link flex items-center gap-x-3.5 py-2 px-2.5 text-base border-b-2 border-dark-grey" href="#0">
+	                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.2 21.9997L16.8 21.9997C19.1196 21.9997 21 20.1193 21 17.7997L21 10.4991C21 9.13031 20.333 7.8474 19.2126 7.06115L14.4126 3.69272C12.9647 2.67664 11.0353 2.67664 9.58741 3.69272L4.78741 7.06115C3.66699 7.8474 3 9.13031 3 10.4991L3 17.7997C3 20.1193 4.8804 21.9997 7.2 21.9997Z" stroke="#5E6063" stroke-width="1.5" stroke-linecap="round"/>
+						<path d="M15 18H9" stroke="#5E6063" stroke-width="1.5" stroke-linecap="round"/>
+					</svg>
+	                Dashboard 
+	            </a>
+	 		</li>
+	       	<li>
+	            <a class="rpn-side-bar-menu-link flex items-center gap-x-3.5 py-2 px-2.5 text-base border-b-2 border-dark-grey" href="#0">
+	                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.73965 9.20626C5.88646 9.59762 5.17005 10.2356 4.68276 11.0378C4.19546 11.8401 3.95963 12.7699 4.00565 13.7075C4.0067 15.0949 4.48786 16.4392 5.36745 17.5122L6.18869 20.319C6.24228 20.5105 6.35617 20.6796 6.51345 20.8013C6.67074 20.9231 6.86306 20.9908 7.0619 20.9947H9.31771C9.56772 20.9865 9.80459 20.8807 9.97754 20.7C10.1505 20.5193 10.2458 20.278 10.2429 20.0279V19.1547H13.1952V19.9447C13.191 20.0676 13.2111 20.1901 13.2543 20.3052C13.2975 20.4203 13.363 20.5258 13.447 20.6156C13.531 20.7053 13.6319 20.7777 13.7439 20.8285C13.8558 20.8793 13.9767 20.9075 14.0996 20.9115H16.3762C16.5746 20.906 16.7661 20.8377 16.9231 20.7162C17.0801 20.5947 17.1943 20.4265 17.2494 20.2358L18.0706 17.429C18.1538 17.138 18.2786 16.5974 18.4033 15.9321L19.2557 15.7554C20.0874 15.5475 20.6383 15.142 20.6383 14.3936V12.6679C20.6385 12.4796 20.6005 12.2932 20.5266 12.12C20.4528 11.9468 20.3445 11.7904 20.2085 11.6602C20.0725 11.53 19.9115 11.4287 19.7352 11.3625C19.5589 11.2963 19.3711 11.2665 19.183 11.2749H18.3929C17.9822 10.2963 17.2914 9.46089 16.4074 8.8736C16.433 8.3938 16.5312 7.92065 16.6985 7.47022C17.0311 6.69057 17.1974 6.68017 17.0831 6.6074C16.8104 6.48176 16.5105 6.42639 16.2109 6.44637C15.9113 6.46634 15.6215 6.56102 15.3678 6.72175C15.158 6.84814 14.9686 7.00589 14.8065 7.18955" stroke="#5E6063" stroke-width="1.5801" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M9.61328 11.6179H12.7319" stroke="#5E6063" stroke-width="1.55931" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M10.5072 8.72787C11.2654 8.72787 11.9925 8.42668 12.5286 7.89057C13.0647 7.35445 13.3659 6.62732 13.3659 5.86913C13.3659 5.10999 13.0651 4.38179 12.5292 3.84402C11.9934 3.30625 11.2663 3.00275 10.5072 3C9.74804 3.00275 9.02093 3.30625 8.48511 3.84402C7.94929 4.38179 7.64843 5.10999 7.64844 5.86913C7.64844 6.62732 7.94962 7.35445 8.48574 7.89057C9.02186 8.42668 9.74899 8.72787 10.5072 8.72787Z" stroke="#5E6063" stroke-width="1.3" stroke-linecap="round"/>
+						<path d="M15.5961 10.7551C15.3901 10.7578 15.1934 10.8408 15.0477 10.9865C14.9021 11.1321 14.8191 11.3288 14.8164 11.5348C14.8191 11.7407 14.9021 11.9375 15.0477 12.0831C15.1934 12.2287 15.3901 12.3117 15.5961 12.3144C15.8038 12.3145 16.0032 12.2326 16.1511 12.0867C16.2989 11.9408 16.3834 11.7425 16.3861 11.5348C16.3834 11.3271 16.2989 11.1288 16.1511 10.9828C16.0032 10.8369 15.8038 10.7551 15.5961 10.7551Z" fill="#5E6063"/>
+					</svg>
+	                Earn
+	            </a>
+	        </li>
+       		<li class="hs-accordion" id="account-accordion">
+          		<a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link text-base border-b-2 border-dark-grey" href="#0">
+		            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="padding-right: 8px;" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21.4435 9.9846V7.50591C21.4385 6.85336 21.1784 6.22866 20.7188 5.76543C20.2592 5.30221 19.6365 5.03724 18.984 5.02722L16.4765 5.02722" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M3.00002 15.1693L3.00002 17.6479C2.99875 17.9743 3.06193 18.2976 3.18593 18.5994C3.30993 18.9013 3.49231 19.1757 3.72261 19.4069C3.9529 19.638 4.22657 19.8215 4.52793 19.9466C4.82929 20.0718 5.15239 20.1362 5.47871 20.1362H7.967" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M8.32823 10.4553C8.79757 10.4553 9.25636 10.3161 9.6466 10.0554C10.0368 9.79463 10.341 9.42402 10.5206 8.99041C10.7002 8.5568 10.7472 8.07966 10.6556 7.61935C10.5641 7.15903 10.3381 6.7362 10.0062 6.40433C9.67433 6.07246 9.2515 5.84645 8.79118 5.75489C8.33086 5.66332 7.85373 5.71032 7.42012 5.88993C6.98651 6.06953 6.6159 6.37369 6.35515 6.76393C6.0944 7.15416 5.95522 7.61296 5.95522 8.0823C5.95007 8.70328 6.19053 9.30114 6.62422 9.74562C7.0579 10.1901 7.64967 10.4452 8.27059 10.4553H8.32823Z" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M10.9513 13.4624C10.2623 12.7801 9.33181 12.3973 8.36212 12.3973C7.39244 12.3973 6.46195 12.7801 5.77295 13.4624" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M15.9538 14.6442C16.4231 14.6442 16.8819 14.505 17.2721 14.2443C17.6624 13.9835 17.9665 13.6129 18.1461 13.1793C18.3257 12.7457 18.3727 12.2686 18.2812 11.8083C18.1896 11.3479 17.9636 10.9251 17.6317 10.5932C17.2999 10.2614 16.877 10.0354 16.4167 9.94379C15.9564 9.85223 15.4793 9.89922 15.0456 10.0788C14.612 10.2584 14.2414 10.5626 13.9807 10.9528C13.7199 11.3431 13.5807 11.8019 13.5807 12.2712C13.5807 12.9006 13.8308 13.5041 14.2758 13.9492C14.7208 14.3942 15.3244 14.6442 15.9538 14.6442Z" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M18.5452 17.6609C18.2052 17.3207 17.8016 17.0509 17.3573 16.8668C16.9131 16.6827 16.4369 16.5879 15.956 16.5879C15.4751 16.5879 14.9989 16.6827 14.5546 16.8668C14.1104 17.0509 13.7068 17.3207 13.3668 17.6609" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M16.7949 3L15.2865 4.74853C15.2017 4.84939 15.1601 4.97971 15.1709 5.11107C15.1817 5.24244 15.244 5.36421 15.3442 5.44987L17.0639 6.95821" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.80415 22L9.3125 20.2419C9.39501 20.14 9.43506 20.0103 9.42432 19.8796C9.41359 19.749 9.35289 19.6275 9.25486 19.5405L7.51593 18.0514" stroke="#5E6063" stroke-width="1.4411" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+            		P2P
+            		<i class="mdi mdi-chevron-down"></i>
+        		</a>
+          		<div id="account-accordion-child" class="hs-accordion-content w-full overflow-hidden hidden">
+            		<ul class="pt-2 pl-2">
+              			<li>
+                			<a class="flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link text-base border-b-2 border-dark-grey" href="#0">
+                				<i class="mdi mdi-arrow-right"></i>  Link 1
+                			</a>
+              			</li>
+              			<li>
+                			<a class="flex items-center gap-x-3.5 py-2 px-2.5 rpn-side-bar-menu-link" href="#0">
+                				<i class="mdi mdi-arrow-right"></i>   Link 2
+                			</a>
+              			</li>
+            		</ul>
+          		</div>
+        	</li>        
+      	</ul>
+    </nav>
+  </div>
+  <!-- End Sidebar -->
+
+<!-- content page -->
+	<div class="w-full px-3 xl:pl-72 lg:px-6">
+	 <!-- navbar -->
+	<div class="hidden sm:flex w-full pt-3">
+		<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full">
+			<nav class="relative w-full sm:flex sm:items-center sm:justify-between">
+	    		<div class="hidden overflow-hidden  grow sm:flex">
+	      			<div class="flex pt-3.5">
+	        			<a class="rpn-header-menu-a" href="#0">Markets</a>
+	        			<a class="rpn-header-menu-a sm:px-3 2xl:px-6" href="#0">Trade</a>
+	       				<a class="rpn-header-menu-a sm:px-3 2xl:px-6" href="#0">Buy Crypto</a>
+	       				<a class="rpn-header-menu-a sm:px-3 2xl:px-6" href="#0">Futures</a>
+			    	</div>
+			   		<div class="flex flex-col gap-x-0 sm:flex-row sm:items-center sm:gap-x-2 absolute right-0 xl:right-6 2xl:right-4">
+			    		<div class="flex nav-profile">
+	            			<img src="images/ava.png" class="w-8 h-8 rounded-full" alt="image">
+	            			<div class="hs-dropdown relative inline-flex ml-4">
+	  							<button id="hs-dropdown-with-title" type="button" class="hs-dropdown-toggle inline-flex justify-center items-center gap-2  align-middle profile-name">
+	    							Artem Ninja
+	    							<svg class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	      								<path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+	    							</svg>
+	  							</button>
+	  							<div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-100 hidden bg-custom min-w-[15rem] rounded-lg p-2 mt-2" aria-labelledby="hs-dropdown-with-title">
+	    							<div class="py-2 first:pt-0 last:pb-0">
+	      								<a class="flex items-center gap-x-3.5 py-4 px-3 text-sm color-f0 border-b-2 border-solid border-dark-grey" href="#0">example@gmail.com</a>
+	      								<a class="flex items-center gap-x-3.5 py-2 px-3 text-sm color-f0" href="#">My profile</a>
+	      								<a class="flex items-center gap-x-3.5 py-2 px-3 text-sm color-f0" href="#">Verification  Center</a>
+	      								<a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm color-f0" href="#">Support</a>
+	       								<a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm color-f0" href="#">API management </a>
+	      								<a class="flex items-center gap-x-3.5 py-4 px-3 text-sm color-f0 border-t-2 border-solid border-dark-grey signout-link" href="#">
+	          								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17 16V16.8C17 19.1196 15.1196 21 12.8 21H8.2C5.8804 21 4 19.1196 4 16.8V7.2C4 4.88041 5.8804 3 8.2 3H12.8C15.1196 3 17 4.8804 17 7.2V8" stroke="#F0F0F0" stroke-width="1.5" stroke-linecap="round"/>
+												<path d="M12 12H20" stroke="#F0F0F0" stroke-width="1.5" stroke-linecap="round"/>
+												<path d="M19 10L20.8586 11.8586C20.9367 11.9367 20.9367 12.0633 20.8586 12.1414L19 14" stroke="#F0F0F0" stroke-width="1.5" stroke-linecap="round"/>
+											</svg>
+	        								Sign out
+	      								</a>
+	    							</div>
+								</div>
+							</div>
+	         			</div>
+	 	    			<div class="hidden lg:block lg:pl-4 w-64  search-box">
+			        		<form action="" class="search-form-top">
+			    				<i class="mdi mdi-magnify"></i>
+								<input class="border-0" type="text" placeholder="Search...." id="search" autocomplete="off">
+				        	</form>
+	 	    			</div>
+	 	    			<!-- search -->
+	 					<div class="flex">
+	        				<a class="xl:pl-4">
+	            				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0001 3C15.956 3 17.9224 6.05422 17.9224 8.58824V11.1512C17.9224 11.562 18.0324 11.9653 18.241 12.3191L18.5116 12.7782C19.6118 14.6447 18.2661 17 16.0994 17H7.82562C5.67557 17 4.32776 14.6772 5.3947 12.8105L5.68135 12.309C5.88002 11.9614 5.98452 11.568 5.98452 11.1677V8.58824C5.98452 6.05422 8.04422 3 12.0001 3Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+									<path d="M14 19.5H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+								</svg>
+	        				</a>         
+	         				<a class="pl-10">
+	            				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-left: -20px" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="1.5"/>
+									<path d="M16.2292 10.1142C16.4333 11.3624 16.4333 12.6376 16.2292 13.8858C15.5614 17.969 14.4421 21 12.0001 21C9.55813 21 8.43879 17.969 7.77102 13.8858C7.56689 12.6376 7.56689 11.3624 7.77102 10.1142C8.43879 6.03103 9.55813 3 12.0001 3C14.4421 3 15.5614 6.03103 16.2292 10.1142Z" stroke="white" stroke-width="1.5"/>
+									<path d="M20.5 12L18.0825 12.4266C14.0586 13.1367 9.94142 13.1367 5.91751 12.4266L3.5 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+								</svg>
+	        				</a>
+						</div>
+	    			</div>
+	    		</div>
+			</nav>
+		</header>
+	</div>
+	<!-- End navbar -->
+	     
+	<!-- mobile version site -->    
+	<div class="flex justify-center pt-4 lg:hidden">
+	    <div class="absolute left-3">
+	        <button type="button" class="justify-center items-center h-12 w-12 rounded-xl border border-dark-grey text-xl  btn-back">
+	  			<i class="mdi mdi-chevron-left"></i>
+			</button>
+	    </div>
+	</div>
+	<!-- mobile header end -->        
+	
+	<!-- content sections for mobile starr -->
+	<div class="w-full justify-center mx-auto  px-3 lg:hidden">
+	</div>
+	<!-- content sections for mobile end -->
+	<!-- mobile version end -->
+	
+<div class="w-full max-w-sm justify-center text-center">	<button data-modal-trigger aria-controls="feedback-card" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ feedback modal
+</button>
+
+	<button data-modal-trigger aria-controls="transfer-funds" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ Transfer funds modal
+</button>
+
+	<button data-modal-trigger aria-controls="transfer-successfully" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ Transfer  Successfully modal
+</button>
+
+<button data-modal-trigger aria-controls="buttons-modal" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ buttons modal
+</button>
+
+<button data-modal-trigger aria-controls="transfer-funds-2" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ Transfer funds #2 modal
+</button>
+</div>
+	
+	
+	<!-- desktop ver start -->
+	<div class="hidden lg:block w-full pt-16">
+		<div class="block w-full">
+	    	<h1 class="main-title">Sell USDT</h1>  
+	    </div>
+	</div>
+	<!-- desktop ver -->
+	
+	<!-- ALL MODAL SECTIONS  START -->
+	<div id="feedback-card" data-modal-target class="hidden">
+		<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+	   		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    		<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      			<div class="flex items-center justify-between min-w-full">
+	       	 			<div class="w-full my-5 text-center justify-center">
+	          				<h1 class="text-neutral-50 text-2xl">Feedback</h1>								    			<p class="text-sm text-neutral-500">How was your trading experience?</p>
+	        			</div>
+	        			<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          				<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        			</button>
+	      			</div>
+					<!-- content start -->    
+					<div class="relative overflow-x-hidden overflow-y-auto w-full text-center h-full flex-grow p-3 justify-center">
+						<!-- buttons group -->
+						<div class="inline-flex w-full">
+							<!-- button 1 -->
+	    					<div class="w-1/2 mr-1">
+					    		<button class="p2p-btn-n-w active">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" style="margin-right:4px" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.4699 8.92579C14.4699 8.92579 13.6433 11.2458 13.2233 12.0258C12.9937 12.3982 12.6686 12.7022 12.2816 12.9062C11.8947 13.1102 11.4602 13.2068 11.0233 13.1858H5.75659V6.65913C6.30326 6.05246 8.36993 3.81246 8.36993 3.81246C8.86326 3.31913 9.32993 2.47913 10.1366 2.99246C10.2578 3.08299 10.3501 3.20682 10.4022 3.34887C10.4542 3.49091 10.4639 3.64503 10.4299 3.79246C10.2433 4.29913 9.84993 5.24579 9.54993 6.00579C9.43659 6.30579 9.70326 6.62579 10.1166 6.62579L13.2488 6.69241C14.7088 6.69241 14.8366 8.13913 14.4699 8.92579Z" stroke="#AEAEAE" stroke-width="0.953333" stroke-linecap="round"/>
+										<path d="M5.75664 12.8458C5.76289 13.0105 5.73605 13.1748 5.67771 13.329C5.61937 13.4832 5.5307 13.6241 5.41697 13.7435C5.30323 13.8628 5.16673 13.9581 5.01553 14.0238C4.86432 14.0894 4.70149 14.1241 4.53665 14.1258H3.30331C2.96317 14.1119 2.64238 13.9638 2.41122 13.7139C2.18005 13.464 2.05735 13.1327 2.06998 12.7925V6.79247C2.05735 6.45228 2.18005 6.12094 2.41122 5.87103C2.64238 5.62112 2.96317 5.47301 3.30331 5.45914H4.53665C4.84665 5.4664 5.14295 5.58833 5.36829 5.80135C5.59362 6.01437 5.73199 6.30336 5.75664 6.61247V12.8458Z" stroke="#AEAEAE" stroke-width="0.966667" stroke-linecap="round"/>
+									</svg> 
+									Positive
+								</button>
+							</div>
+							<!-- button 2 -->
+							<div class="w-1/2">
+			    				<button class="p2p-btn-n-w">
+							   		<svg width="17" height="17" viewBox="0 0 17 17" fill="none" style="margin-right:4px" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.23711 8.00878C2.23711 8.00878 3.06377 5.68878 3.48377 4.90878C3.7133 4.53642 4.03846 4.2324 4.42538 4.02839C4.81231 3.82437 5.24686 3.72782 5.68377 3.74878H10.9504V10.2754C10.4038 10.8821 8.3371 13.1221 8.3371 13.1221C7.84377 13.6154 7.37711 14.4554 6.57044 13.9421C6.44923 13.8516 6.35696 13.7277 6.30488 13.5857C6.2528 13.4437 6.24315 13.2895 6.2771 13.1421C6.46377 12.6354 6.8571 11.6888 7.1571 10.9288C7.27044 10.6288 7.00377 10.3088 6.59044 10.3088L3.45825 10.2422C1.99825 10.2422 1.87044 8.79544 2.23711 8.00878Z" stroke="#AEAEAE" stroke-width="0.953333" stroke-linecap="round"/>
+										<path d="M10.9724 4.16842C10.9661 4.00369 10.993 3.83937 11.0513 3.68519C11.1096 3.53101 11.1983 3.39009 11.312 3.27076C11.4258 3.15143 11.5623 3.05612 11.7135 2.99045C11.8647 2.92477 12.0275 2.89008 12.1924 2.88841H13.4257C13.7658 2.90229 14.0866 3.05041 14.3178 3.30032C14.549 3.55022 14.6717 3.88155 14.659 4.22175V10.2218C14.6717 10.5619 14.549 10.8933 14.3178 11.1432C14.0866 11.3931 13.7658 11.5412 13.4257 11.5551H12.1924C11.8824 11.5478 11.5861 11.4259 11.3607 11.2129C11.1354 10.9998 10.997 10.7109 10.9724 10.4018V4.16842Z" stroke="#AEAEAE" stroke-width="0.966667" stroke-linecap="round"/>
+									</svg> 
+									Negative
+								</button>
+							</div>		
+						</div>  
+	  					<!-- button group end -->
+						<div class="p2p-base-card table justify-start pt-5">
+	    					<label class="p2p-feedback-checkbox">
+					    		<input type="checkbox" checked>
+								<span>Fast transaction</span>
+							</label>
+							<label class="p2p-feedback-checkbox">
+					    		<input type="checkbox">
+								<span>Polite and friendly</span>
+				 			</label>
+							<label class="p2p-feedback-checkbox">
+					    		<input type="checkbox">
+								<span>Patient</span>
+							</label>
+							<label class="p2p-feedback-checkbox">
+					    		<input type="checkbox">
+								<span>Safe and trustworthy</span>
+							</label>
+							<label class="p2p-feedback-checkbox">
+					    		<input type="checkbox">
+								<span>Good price</span>
+	    					</label>
+						</div>
+						<!-- checkbox buttons-->
+						<div class="w-full pt-3">
+	    					<textarea class="feedback-txt-area" maxlength="500" placeholder="Please let other people know about your positive experience"></textarea>
+							<span class="symbol_count" id="symbol_count">0/100</span>
+						</div>
+						<!-- text area block end -->
+						<div class="flex pb-5">
+	    					<label class="p2p-feedback-checkbox-1-label">
+					    		<input type="checkbox" class="p2p-feedback-checkbox-1">
+								<span>Anonymous comment</span>
+	    					</label>
+						</div>
+						<div class="w-100 pt-5 pb-10">
+	    					<button class="p2p-btn-f-g">Submit</button>
+						</div>
+					</div>
+					<!-- content end -->
+	    		</div>
+	  	</div>
+	</div>
+<!-- ####### FEEDBACK CARD MODAL END####### -->
+
+<!-- #### transfer funds modal start###### -->
+	<div id="transfer-funds" data-modal-target class="hidden">
+		<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+	   		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    		<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      			<div class="flex items-center justify-between min-w-full">
+	       	 			<div class="w-full my-5 text-center justify-center">
+	          				<h1 class="text-neutral-50 text-2xl">Transfer funds</h1>
+	        			</div>
+	        			<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          				<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        			</button>
+	      			</div>
+					<!-- content start -->    
+					<div class="relative overflow-x-hidden overflow-y-auto w-full h-full flex-grow px-3 justify-start pb-36 lg:pb-2">
+  
+<div class="w-full inline-flex justify-between">
+    <a href="#0" class="text-base clr-white mt-1">Transfer to USDT Funding Wallet</a>
+    <i class="mdi mdi-chevron-right text-2xl clr-white"></i>
+</div>
+
+<div class="w-full inline-flex justify-between">
+    <a href="#0" class="text-base clr-white mt-1">Transfer to USDT Trading Wallet</a>
+    <i class="mdi mdi-chevron-right text-2xl clr-white"></i>
+</div>
+					</div>
+					<!-- content end -->
+	    		</div>
+	  	</div>
+	</div>
+	<!-- #### transfer funds modal end ###### -->
+
+<!-- #### transfer-successfully modal start###### -->
+	<div id="transfer-successfully" data-modal-target class="hidden">
+		<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+	   		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    		<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      			<div class="flex items-center justify-between min-w-full">
+	       	 			<div class="w-full my-5 text-center justify-center">
+	
+	        			</div>	      			    
+	        			<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          				<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        			</button>
+	      			</div>
+					<!-- content start -->    
+					<div class="relative overflow-x-hidden overflow-y-auto w-full h-full px-3 block justify-center text-center pb-36 lg:pb-2">
+  
+<div class="flex justify-center"><svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M37.5 64.75C52.8259 64.75 65.25 52.3259 65.25 37C65.25 21.6741 52.8259 9.25 37.5 9.25C22.1741 9.25 9.75 21.6741 9.75 37C9.75 52.3259 22.1741 64.75 37.5 64.75Z" stroke="#4CE97D" stroke-width="4.625"/>
+												<path d="M30.5996 38.5417L35.0066 42.9487C35.1269 43.0689 35.3224 43.0689 35.4426 42.9487L47.5579 30.8333" stroke="#4CE97D" stroke-width="4.625" stroke-linecap="round"/>
+											</svg></div>
+
+<p class="text-2xl">Transfer successfully</p>
+<p class="clr-white text-4xl">735 USDT</p>      
+
+<div class="w-100 pt-5 pb-10">
+	    					<button class="p2p-btn-f-g">Submit</button>
+						</div>
+					</div>
+					<!-- content end -->
+	    		</div>
+	  	</div>
+	</div>
+	<!-- #### transfer-successfully modal end ###### -->
+
+<!-- #### buttons modal start###### -->
+	<div id="buttons-modal" data-modal-target class="hidden">
+		<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+	   		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    		<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      			<div class="flex items-center justify-between min-w-full">
+	       	 			<div class="w-full my-5 text-center justify-center">
+	
+	        			</div>	      			    
+	        			<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          				<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        			</button>
+	      			</div>
+					<!-- content start -->    
+					<div class="relative overflow-x-hidden overflow-y-auto w-full h-full px-3 block justify-center text-center pb-36 lg:pb-2">
+  
+
+<div class="inline-flex">
+    <a href="" class="inline-flex"><svg class="h-12 w-12" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 22.2832L21.1426 14.8586" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M15.9999 12.9628L21.6138 12.9627C22.0281 12.9628 22.3639 13.2986 22.3639 13.7128L22.3639 19.3268" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+    
+    <div class="block text-left ml-2">
+        <p class="text-lg clr-white">Buy</p>
+        <p class="text-base clr-gray">Buy crypto with cash</p>
+    </div></a>
+</div>    
+
+<div class="inline-flex mt-4">
+    <a href="" class="inline-flex"><svg class="h-12 w-12" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.5 24C31.5 28.1421 28.1421 31.5 24 31.5L12 31.5C7.8579 31.5 4.5 28.1421 4.5 24L4.5 12C4.5 7.8579 7.8579 4.5 12 4.5L24 4.5C28.1421 4.5 31.5 7.8579 31.5 12L31.5 24Z" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M13.718 22.2832L21.1426 14.8586" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M15.9999 12.9628L21.6138 12.9627C22.0281 12.9628 22.3639 13.2986 22.3639 13.7128L22.3639 19.3268" stroke="#4CE97D" stroke-width="2.25" stroke-linecap="round"/>
+</svg>
+    
+    <div class="block text-left ml-2">
+        <p class="text-lg clr-white">Buy</p>
+        <p class="text-base clr-gray">Buy crypto with cash</p>
+    </div></a>
+</div>    
+					</div>
+					<!-- content end -->
+	    		</div>
+	  	</div>
+	</div>
+	<!-- #### buttons modal end ###### -->
+
+
+<!-- #### transfer funds #2 modal start###### -->
+	<div id="transfer-funds-2" data-modal-target class="hidden">
+		<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+	   		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    		<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      			<div class="flex items-center justify-between min-w-full">
+	       	 			<div class="w-full my-5 text-center justify-center">
+	<h1 class="text-neutral-50 text-2xl">Transfer funds</h1>
+	        			</div>	      			    
+	        			<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          				<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        			</button>
+	      			</div>
+					<!-- content start -->    
+					<div class="relative overflow-x-hidden overflow-y-auto w-full h-full px-3 block justify-start pb-36 lg:pb-2">
+  
+<div>
+    <select class="block w-full bg-transparent border border-dark-grey clr-gray py-3 px-4 pr-16 rounded-full leading-tight focus:outline-none focus:border-gray-500 inline-flex">
+  <option selected>ETH</option>
+  <option>BTC</option>
+  <option>APX</option>
+  <option>DOGE</option>
+</select>
+</div>
+
+<label for="hs-select-label" class="block text-sm mt-2 ml-1 clr-gray">Label</label>
+<select id="hs-select-label" class="block w-full bg-transparent border border-dark-grey clr-gray py-3 px-4 pr-16 rounded-full leading-tight focus:outline-none focus:border-gray-500 inline-flex">
+  <option selected>ETH</option>
+  <option>Btc</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+
+
+<!-- item -->
+<div class="flex justify-between pt-5">
+    <div class="bgs-dark-gray rounded-lg block py-3 pl-3 pr-10">
+        <p class="">Current wallet</p>
+        <span class="clr-white text-sm">176,564.97</span>
+    </div>
+    
+    <div class="text-3xl mt-3"><i class="mdi mdi-chevron-right"></i></div>
+    
+    <div class="bgs-dark-gray rounded-lg block py-3 pl-3 pr-10">
+        <p>Current wallet</p>
+        <span class="clr-white text-sm">176,564.97</span>
+    </div>
+    
+</div>
+<!-- item end -->
+
+
+<div class="w-100 py-6">
+	    					<button class="p2p-btn-f-g">Submit</button>
+						</div>
+
+					</div>
+					<!-- content end -->
+	    		</div>
+	  	</div>
+	</div>
+	<!-- #### transfer funds #2 modal end ###### -->
+
+
+
+
+
+	<!-- ALL MODAL SECTIONS END -->	
+	</div>
+
+	<script src="../js/preline.js"></script>
+	<script src="../js/plug.js"></script>
+  
+</body>
+</html>
