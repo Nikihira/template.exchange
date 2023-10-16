@@ -179,14 +179,19 @@
 <button data-modal-trigger aria-controls="transfer-funds-2" aria-expanded="false" class="p2p-btn-n-w mt-5">
  Transfer funds #2 modal
 </button>
+
+<button data-modal-trigger aria-controls="select-withdraw-network" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ Select withdraw network
+</button>
+
+<button data-modal-trigger aria-controls="select-deposit-network" aria-expanded="false" class="p2p-btn-n-w mt-5">
+ Select DEPOSIT network
+</button>
 </div>
 	
 	
 	<!-- desktop ver start -->
 	<div class="hidden lg:block w-full pt-16">
-		<div class="block w-full">
-	    	<h1 class="main-title">Sell USDT</h1>  
-	    </div>
 	</div>
 	<!-- desktop ver -->
 	
@@ -452,9 +457,146 @@
 	</div>
 	<!-- #### transfer funds #2 modal end ###### -->
 
+<!-- #### Select withdraw network modal start###### -->
+<div id="select-withdraw-network" data-modal-target class="hidden">
+	<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    	<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      		<div class="flex items-center justify-between min-w-full">
+	       	 		<div class="w-full my-5 text-center justify-center">
+						<h1 class="text-neutral-50 text-xl">Select withdraw network</h1>
+	        		</div>	      			    
+	        		<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          			<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        		</button>
+	      		</div>
+				<!-- content start -->    
+				<div class="relative overflow-x-hidden overflow-y-auto w-full h-full px-3 block justify-start pb-36 lg:pb-2">
+					<div class="flex justify-center">
+    					<div class="tabs"> 
+    						<a id="select-withdraw-network-tron-items" data-hs-tab="#select-withdraw-network-tron" aria-controls="select-withdraw-network-tron" role="tab" class="tab tab-bordered active px-10">TRON</a> 
+  							<a id="select-withdraw-network-eth-items" data-hs-tab="#select-withdraw-network-eth" aria-controls="select-withdraw-network-eth" role="tab" class="tab tab-bordered px-10">ETH</a>
+							<a id="select-withdraw-network-matic-items" data-hs-tab="#select-withdraw-network-matic" aria-controls="select-withdraw-network-matic" role="tab" class="tab tab-bordered px-10">MATIC</a>
+						</div>
+					</div>
+					<div class="mt-3">
+						<div id="select-withdraw-network-tron" role="tabpanel" aria-labelledby="select-withdraw-network-tron-items">
+							<div class="mt-6">
+    							<label class="block text-sm text-left mb-1">Wallet adress</label>
+  								<div class="flex border-2 border-dark-grey rounded-full">
+    								<input type="text" id="" placeholder="Long press to paste" class="py-3 px-4 block w-full text-sm focus:z-10">
+  								</div>
+							</div>
+							<!-- item end -->
+							<div class="mt-4">
+								<label class="block text-sm text-left mb-1">Amount</label>
+							  	<div class="flex border-2 border-dark-grey rounded-full">
+							    	<input type="number" id="" placeholder="0.00 USDT" class="py-3 px-4 block w-full text-sm focus:z-10">
+							    	<button type="button" class="inline-flex mr-4 justify-center items-center focus:outline-none transition-all text-sm clr-green">max</button>
+							  	</div>
+							</div>
+							<!-- item end -->
+							<div class="mt-2">
+							    <p class="clr-gray">Available <span class="clr-white">169.88 USDT</span></p>
+							    <p class="clr-gray mt-5">Receive amount <span class="clr-white">0.00 USDT</span></p>
+							    <p class="clr-gray mt-1">Network fee <span class="clr-white">0.00 USDT</span></p>
+							</div>
+							<!-- item end -->
+							<div class="w-100 mt-6 pb-8">
+								<button class="p2p-btn-f-g">Withdraw</button>
+							</div>
+						</div> 
+  						<!-- tron panel end -->
+						<div id="select-withdraw-network-eth" class="hidden" role="tabpanel" aria-labelledby="select-withdraw-network-eth-items">
+							<!-- content here-->
+						</div>
+						<!-- eth panel end -->
+						<div id="select-withdraw-network-matic" class="hidden" role="tabpanel" aria-labelledby="select-withdraw-network-eth-items">
+						    <!-- content here-->
+						</div>
+					</div>
+				</div>
+				<!-- content end -->
+	    	</div>
+	 </div>
+</div>
+<!-- #### Select withdraw network modal end ###### -->
 
+<!-- #### Select DEPOSIT network modal start###### -->
+<div id="select-deposit-network" data-modal-target class="hidden">
+	<div class="flex w-full xl:max-w-xl items-center justify-center fixed inset-0 z-50 lg:inset-auto lg:inset-y-2/4">
+		<div data-modal-close data-modal-overlay tabindex="-1" data-class-out="opacity-0" data-class-in="opacity-70" class="opacity-0 fixed inset-0 w-full z-50 transition-opacity duration-300 bg-black select-none"></div>
+	    	<div data-modal-wrapper data-class-out="opacity-0 translate-y-5" data-class-in="opacity-100 translate-y-0" class="opacity-0 w-full z-50 absolute inset-x-0 bottom-0 overflow-auto max-w-screen max-h-screen scrolling-touch transition-all duration-300 bg-custom flex flex-col transform rounded-md lg:bottom-auto lg:max-w-xl lg:p-5">
+	      		<div class="flex items-center justify-between min-w-full">
+	       	 		<div class="w-full my-5 text-center justify-center">
+						<h1 class="text-neutral-50 text-xl">Select withdraw network</h1>
+	        		</div>	      			    
+	        		<button data-modal-close aria-label="Close" class="bg-neutral-800 h-8 w-8 justify-center rounded-full text-gray-500 hover:text-black focus:outline-none focus:text-black transition ease-in-out duration-150 absolute top-3 right-2">
+	          			<svg class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+	        		</button>
+	      		</div>
+				<!-- content start -->    
+				<div class="relative overflow-x-hidden overflow-y-auto w-full h-full px-3 block justify-start pb-36 lg:pb-2">
+					<div class="flex justify-center">
+    					<div class="tabs"> 
+    						<a id="select-deposit-network-tron-items" data-hs-tab="#select-deposit-network-tron" aria-controls="select-deposit-network-tron" role="tab" class="tab tab-bordered active px-10">TRON</a> 
+  				
+							<a id="select-deposit-matic-items" data-hs-tab="#select-deposit-network-matic" aria-controls="select-deposit-network-matic" role="tab" class="tab tab-bordered px-10">MATIC</a>
+						</div>
+					</div>
+					<div class="mt-3">
+						<div id="select-deposit-network-tron" role="tabpanel" aria-labelledby="select-deposit-network-tron-items">
+						
+<div class="bgs-dark-gray-50 border border-dark-grey rounded-lg p-4" role="alert">
+  <div class="flex">
+    <div class="flex-shrink-0 mt-5">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="#FAE31B"/>
+<path d="M12.645 7.242L12.491 14.242H11.427L11.273 7.242H12.645ZM12.015 17.084C11.7724 17.084 11.567 17 11.399 16.832C11.231 16.664 11.147 16.4587 11.147 16.216C11.147 15.9733 11.231 15.768 11.399 15.6C11.567 15.432 11.7724 15.348 12.015 15.348C12.2484 15.348 12.4444 15.432 12.603 15.6C12.771 15.768 12.855 15.9733 12.855 16.216C12.855 16.4587 12.771 16.664 12.603 16.832C12.4444 17 12.2484 17.084 12.015 17.084Z" fill="#1C1E26"/>
+</svg>
+    </div>    
+    <div class="ml-4">This is a <span class="clr-white">TRON</span> chain adress. Do not send any other chain to this adress or your fund will be lost.
+    </div>    
+  </div>
+</div>
+<!-- item end -->						
 
+<div class="border border-dark-grey rounded-lg p-3 mt-5 block">
+  <div class="flex justify-center"><img src="../images/qr.png" alt=""></div>
+  
 
+<div class="flex justify-between">
+    <p class="clr-gray">Wallet adress</p>
+    <button><svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="0.5" width="9" height="9" rx="4.5" fill="#4CE97D"/>
+<path d="M3 5.28125L3.68358 5.98617C3.75724 6.06215 3.87911 6.06215 3.9528 5.98617L6 3.875" stroke="#1C1E26" stroke-width="0.9375" stroke-linecap="round"/>
+</svg></button>
+</div>  
+<div class="clr-white">0f0ck40300030440xjx300zz200x0x0xx003</div>  
+   
+<div class="flex justify-between mt-5">
+    <p class="text-sm clr-gray">Transfer limit</p>
+<p class="clr-white">Unlimited</p>
+</div>  
+   
+   
+   
+</div>	
+<!-- qr -->	
+										
+</div> 
+  						<!-- tron panel end -->
+  						
+						<div id="select-deposit-network-matic" class="hidden" role="tabpanel" aria-labelledby="select-deposit-network-matic-items">
+						    <!-- content here-->
+						</div>
+					</div>
+				</div>
+				<!-- content end -->
+	    	</div>
+	 </div>
+</div>
+<!-- #### Select deposit network modal end ###### -->
 
 	<!-- ALL MODAL SECTIONS END -->	
 	</div>

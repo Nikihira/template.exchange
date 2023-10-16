@@ -13,6 +13,7 @@ body {
 .clr-dark-gray {color: #1C1E26 !important;}
 /* backgrounds colors */
 .bgs-dark-gray{background: #1C1E26 !important;}
+.bgs-dark-gray-50{background: rgba(28, 30, 38, 0.5) !important;}
 .bgs-white{background: #F0F0F0 !important;}
 .bgs-green{background: #4CE97D !important;}
 .bgs-black{background: #000 !important;}
@@ -55,6 +56,24 @@ body {
     opacity: 1;
     color: #F0F0F0 !important;
 }
+
+::placeholder {
+  color: #5E6063 !important;
+  opacity: 1;
+}
+
+input{
+    background: none;
+    border-radius: 25px;
+    color: #AEAEAE;
+}
+
+input:focus { 
+    outline: none !important;
+    color: #AEAEAE!important;
+}
+    
+.rpn-input-network{}
 
 .search-input-1{
     border: 1px solid #1C1E26 !important;
